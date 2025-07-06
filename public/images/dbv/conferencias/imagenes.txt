@@ -1,0 +1,29 @@
+ El volumen de la unidad E es Data
+ El n£mero de serie del volumen es: F691-2225
+
+ Directorio de E:\Programacion\Web\davidbuenov\public\images\dbv\conferencias
+
+03/06/2022  19:55    <DIR>          .
+03/06/2022  19:04    <DIR>          ..
+03/06/2022  19:04         1.529.155 200607CursoVerano.JPG
+03/06/2022  19:04         1.586.869 200607CursoVeranoMoviles.JPG
+03/06/2022  19:04           151.063 201410 Centac.jpg
+03/06/2022  19:04           190.007 201410PlataformasCiudad.jpg
+03/06/2022  19:04         1.083.984 2015002SmartCity.jpg
+03/06/2022  19:04           109.397 201502.jpg
+03/06/2022  19:04           585.959 201604DesayunoTecnologicoIngenia.jpeg
+03/06/2022  19:04            65.016 201706CEASevilla.jpg
+03/06/2022  19:04           535.349 201711Aslan.jpg
+03/06/2022  19:04         1.633.724 20180316AytoRGPD.JPG
+03/06/2022  19:04         4.731.217 201805PlanetaChatbotSegittur.JPG
+03/06/2022  19:04         1.900.047 201806CUadrodeMandos.jpg
+03/06/2022  19:04           167.716 201810.jpg
+03/06/2022  19:04        12.225.896 201810CuadroMandosDip1.JPG
+03/06/2022  19:04        11.664.506 201810CuadroMandosDip2.JPG
+03/06/2022  19:04           132.161 2018121FEMP.jpg
+03/06/2022  19:04           157.482 201903concursodatosabiertos.jpg
+03/06/2022  19:04           397.793 201903DataBeers.jpg
+03/06/2022  19:04         2.032.239 20807CursosVeranoUMA.JPG
+03/06/2022  19:55                 0 imagenes.txt
+              20 archivos     40.879.580 bytes
+               2 dirs  235.674.230.784 bytes libres
