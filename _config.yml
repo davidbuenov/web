@@ -1,0 +1,16 @@
+# --- Configuración Básica ---
+title: David Bueno Vallejo
+description: >- # Esto permite descripciones de varias líneas
+  Web personal de David Bueno Vallejo. Explorando la tecnología a través de la investigación,
+  la consultoría, la docencia y la divulgación.
+url: "https://davidbuenov.com" # Tu dominio final
+
+# --- Configuración de Build ---
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title:output_ext # URLs amigables para el blog
+
+# --- Excluir archivos del procesamiento ---
+# No es necesario que Jekyll procese estas carpetas
+exclude:
+  - Gemfile
+  - Gemfile.lock
