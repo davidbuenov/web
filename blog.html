@@ -1,0 +1,86 @@
+---
+layout: default
+title: Blog | David Bueno Vallejo
+description: Artículos, reflexiones y tutoriales sobre tecnología, IA, docencia y consultoría estratégica.
+---
+
+<!-- Page Title
+============================================= -->
+<section class="page-title bg-transparent">
+    <div class="container">
+        <div class="page-title-row">
+
+            <div class="page-title-content">
+                <h1>Blog de David Bueno Vallejo</h1>
+                <span>Artículos, reflexiones y exploraciones tecnológicas.</span>
+            </div>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                </ol>
+            </nav>
+
+        </div>
+    </div>
+</section><!-- .page-title end -->
+
+<!-- Content
+============================================= -->
+<section id="content">
+    <div class="content-wrap">
+        <div class="container">
+
+            <div class="position-relative">
+
+                <div class="timeline-border"></div>
+
+                <!-- Posts
+                ============================================= -->
+                <div id="posts" class="post-grid grid-container row post-timeline col-mb-50">
+
+                    <!-- ============================================= -->
+                    <!-- INICIO DEL BUCLE MÁGICO DE JEKYLL -->
+                    <!-- Este código recorre todos tus archivos en la carpeta _posts y genera una entrada para cada uno -->
+                    <!-- ============================================= -->
+                    {% for post in site.posts %}
+
+                    <div class="entry col-lg-6 col-12">
+                        <div class="entry-timeline">
+                            <div class="timeline-divider"></div>
+                        </div>
+                        <div class="grid-inner">
+                            {% if post.image %}
+                            <div class="entry-image">
+                                <a href="{{ post.url | relative_url }}"><img src="{{ post.image }}" alt="Imagen de {{ post.title }}"></a>
+                            </div>
+                            {% endif %}
+                            <div class="entry-title">
+                                <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                            </div>
+                            <div class="entry-meta">
+                                <ul>
+                                    <li><i class="uil uil-schedule"></i> {{ post.date | date: "%d de %B de %Y" }}</li>
+                                </ul>
+                            </div>
+                            <div class="entry-content">
+                                <!-- post.excerpt coge automáticamente el primer párrafo de tu artículo como resumen -->
+                                <p>{{ post.excerpt }}</p>
+                                <a href="{{ post.url | relative_url }}" class="more-link">Leer Más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% endfor %}
+                    <!-- ============================================= -->
+                    <!-- FIN DEL BUCLE MÁGICO DE JEKYLL -->
+                    <!-- ============================================= -->
+
+                </div><!-- #posts end -->
+
+            </div>
+
+        </div>
+    </div>
+</section><!-- #content end -->

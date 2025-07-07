@@ -4,4 +4,14 @@
 	Add all your Custom Styled CSS here for New Styles or
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
+/* --- Estilos para Imágenes de Blog --- */
+
+.entry-image .image-medium {
+    max-width: 700px; /* Puedes ajustar este valor a tu gusto */
+    display: block;   /* Necesario para que el margin: auto funcione */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px; /* Opcional: añade un borde redondeado sutil */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Opcional: añade una sombra suave */
+}
 

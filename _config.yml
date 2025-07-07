@@ -9,6 +9,10 @@ url: "https://davidbuenov.com" # Tu dominio final
 markdown: kramdown
 permalink: /:categories/:year/:month/:day/:title:output_ext # URLs amigables para el blog
 
+# --- Plugins ---
+plugins:
+  - jekyll-sitemap
+
 # --- Excluir archivos del procesamiento ---
 # No es necesario que Jekyll procese estas carpetas
 exclude:

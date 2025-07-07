@@ -260,6 +260,10 @@ function loadHeaderFooter() {
 								  <a class="menu-link" href="/proyectos.html"><div>Proyectos</div></a>
 								 
 							  </li>
+							     <li class="menu-item">
+								  <a class="menu-link" href="/blog.html"><div>Blog</div></a>
+								 
+							  </li>
 							  <li class="menu-item">
 								  <a class="menu-link" href="/formacion.html">
 									  <div>Conferencias y Divulgación</div>
