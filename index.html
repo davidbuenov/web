@@ -24,19 +24,7 @@ page_scripts: |
                 "https://iaensalud.es",
                 ""
             )
-            loadProjectSummaryIndex('pgrafoscopico',
-                '/proyectos/analisis-grafoscopico.html',
-                'images/dbv/proyectos/grafoscopico.webp',
-                'images/dbv/proyectos/grafoscopico-full.webp',
-                'Análisis Grafoscópico con IA',
-                'Colaboración con la Policía Científica Nacional para la identificación de escritura manuscrita.');
-
-            loadProjectSummary('pai-catalog',
-                'proyectos/ai-courses-catalog.html',
-                'images/dbv/proyectos/ai-catalog-full.webp',
-                'images/dbv/proyectos/ai-catalog-full.webp',
-                'AI Courses Catalog',
-                'Catálogo de cursos de IA desarrollado en colaboración con IA Generativa');
+            
 
         });
   </script>
@@ -177,18 +165,41 @@ page_scripts: |
 	<div class="section topmargin mb-0 border-bottom-0">
 		<div class="container clearfix">
 			<div class="heading-block center m-0">
-				<h3><a href="proyectos.html">Últimos Proyectos</a></h3>
+				<h3><a href="/proyectos.html">Últimos Proyectos</a></h3>
 			</div>
 		</div>
 	</div>
 
-	<div id="portfolio" class="portfolio row g-0 portfolio-reveal grid-container">
+<div id="portfolio" class="portfolio row g-0 portfolio-reveal grid-container">
 
-		<article id="pgrafoscopico" class="portfolio-item col-sm-6 col-12 pf-media pf-icons"></article>
-		<article id="pai-catalog" class="portfolio-item col-sm-6 col-12 pf-media pf-icons"></article>
+    <!-- Bucle mágico que coge los 2 proyectos más recientes -->
+    {% assign latest_projects = site.projects | sort: 'date' | reverse | slice:0, 2 %}
+    {% for project in latest_projects %}
 
+    <article class="portfolio-item col-sm-6 col-12 pf-media pf-icons">
+        <div class="grid-inner">
+            <div class="portfolio-image">
+                <a href="{{ project.url | relative_url }}">
+                    <img src="{{ project.image_thumb }}" alt="{{ project.title }}">
+                </a>
+                <div class="bg-overlay">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                        <a href="{{ project.image_full }}" class="overlay-trigger-icon bg-light text-dark" data-lightbox="image" title="Image"><i class="uil uil-plus"></i></a>
+                        <a href="{{ project.url | relative_url }}" class="overlay-trigger-icon bg-light text-dark"><i class="uil uil-ellipsis-h"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                </div>
+            </div>
+            <div class="portfolio-desc">
+                <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+                <span>{{ project.excerpt }}</span>
+            </div>
+        </div>
+    </article>
 
-	</div>
+    {% endfor %}
+
+</div>
 
 	<a href="proyectos.html" class="button button-full button-dark center text-end bottommargin-lg">
 		<div class="container clearfix">

@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<section id="content">
+    <div class="content-wrap">
+        <div class="container clearfix">
+            <div class="row">
+
+                <!-- Portfolio Single Image -->
+                <div class="col-lg-4 portfolio-single-image">
+                    {% if page.image_full %}
+                        <a href="#"><img src="{{ page.image_full }}" alt="{{ page.title }}"></a>
+                    {% endif %}
+                </div>
+
+                <!-- Portfolio Single Content -->
+                <div class="col-lg-8 portfolio-single-content">
+                    
+                    <!-- Contenido del Markdown -->
+                    {{ content }}
+                    
+                    <div class="line"></div>
+
+                    <!-- Metadatos del Proyecto -->
+                    <ul class="portfolio-meta bottommargin">
+                        {% if page.role %}<li><span><i class="icon-user"></i>Mi Rol:</span> {{ page.role }}</li>{% endif %}
+                        {% if page.director %}<li><span><i class="icon-user-plus"></i>Dirección General:</span> {{ page.director }}</li>{% endif %}
+                        {% if page.creators %}<li><span><i class="icon-users"></i>Creado por:</span> {{ page.creators }}</li>{% endif %}
+                        {% if page.inventor %}<li><span><i class="icon-user"></i>Inventor:</span> {{ page.inventor }}</li>{% endif %}
+                        {% if page.client_name %}<li><span><i class="icon-building-o"></i>Socio/Cliente:</span> <a href="{{ page.client_url }}" target="_blank">{{ page.client_name }}</a></li>{% endif %}
+                        {% if page.titular %}<li><span><i class="icon-building"></i>Titular:</span> {{ page.titular }}</li>{% endif %}
+                        {% if page.year %}<li><span><i class="icon-calendar3"></i>Año:</span> {{ page.year }}</li>{% endif %}
+                        {% if page.tech %}<li><span><i class="icon-lightbulb"></i>Tecnologías:</span> {{ page.tech }}</li>{% endif %}
+                        {% if page.web_url %}<li><span><i class="icon-link"></i>Web:</span> <a href="{{ page.web_url }}" target="_blank">{{ page.web_text | default: "Visitar Sitio Web" }}</a></li>{% endif %}
+                        {% if page.github_url %}<li><span><i class="fa-brands fa-github"></i>Código:</span> <a href="{{ page.github_url }}" target="_blank">Repositorio en GitHub</a></li>{% endif %}
+                        {% if page.news_links %}
+                        <li class="d-flex align-items-center"><span><i class="icon-line-link"></i>Noticias:</span>
+                            <div class="d-flex flex-column ms-3">
+                                {% for link in page.news_links %}
+                                    <a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
+                                {% endfor %}
+                            </div>
+                        </li>
+                        {% endif %}
+                    </ul>
+
+
+{% if page.social_links %}
+<div class="si-share d-flex justify-content-between align-items-center mt-4">
+    <span>Sus redes sociales:</span>
+    <div>
+        {% for link in page.social_links %}
+            <a href="{{ link.url }}" class="social-icon h-bg-{{ link.platform | downcase }}" target="_blank">
+                <i class="{{ link.icon_class }}"></i>
+                <i class="{{ link.icon_class }}"></i>
+            </a>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+
+                </div>
+            </div>
+
+            <!-- Sección de Vídeos (Solo si existen) -->
+            {% if page.videos %}
+            <div class="divider divider-center"><i class="icon-circle"></i></div>
+            <h4>Videos relacionados:</h4>
+            <div id="related-portfolio" class="owl-carousel portfolio-carousel carousel-widget" data-margin="20" data-pagi="false" data-autoplay="5000" data-items-xs="1" data-items-sm="2" data-items-md="3" data-items-lg="4">
+                {% for video in page.videos %}
+                    <div class="oc-item" id="{{ video.id }}"></div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
+</section>

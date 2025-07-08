@@ -1,68 +1,42 @@
 ---
 layout: default
-page_scripts: |
-  <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            loadProjectSummary('pcemi',
-                'proyectos/liderazgo-cemi.html',
-                'images/dbv/proyectos/cemi.webp',
-                'images/dbv/proyectos/cemi-full.webp',
-                'Liderando la Transformación Digital de Málaga (2011-2021)',
-                'Caso de éxito: Una década como CIO del Ayuntamiento de Málaga.');
-            loadProjectSummary('ppatente',
-                'proyectos/patente-deportes.html',
-                'images/dbv/proyectos/patente.webp',
-                'images/dbv/proyectos/patente-full.webp',
-                'Patente: Sistema de Seguimiento Deportivo',
-                'Invención de un sistema pionero para la monitorización de deportistas en tiempo real (Concedida 2013).');
-            loadProjectSummary('pgrafoscopico',
-                'proyectos/analisis-grafoscopico.html',
-                'images/dbv/proyectos/grafoscopico.webp',
-                'images/dbv/proyectos/grafoscopico-full.webp',
-                'Análisis Grafoscópico con IA',
-                'Colaboración con la Policía Científica Nacional para la identificación de escritura manuscrita.');
-            loadProjectSummary('pai-catalog',
-                'proyectos/ai-courses-catalog.html',
-                'images/dbv/proyectos/ai-catalog.webp',
-                'images/dbv/proyectos/ai-catalog-full.webp',
-                'AI Courses Catalog',
-                'Catálogo de cursos de IA desarrollado en colaboración con IA Generativa');
-            loadProjectSummary('puniversalplatform',
-                'https://www.fab.com/es-es/listings/bc56418e-03fe-45db-8d88-71e823445f20',
-                'images/dbv/dbvplatform.webp',
-                'images/dbv/dbvplatform-full.webp',
-                'DBV Universal Platform',
-                'Plataforma universal para juegos de plataformas en Unreal Engine.');
-            loadProjectSummary('pevumax', 'proyectos/evumax.html', 'images/dbv/evumax.webp', 'images/dbv/evumax-full.webp', 'EVUMAX', 'Entornos Virtuales Maxi Realistas');
-            loadProjectSummary('pvictoria', 'proyectos/victoria-la-malaguena.html', 'images/dbv/victoria.webp', 'images/dbv/victoria-full.webp', 'Victoria la Malagueña', 'Chatbot con Dialogflow para el Asistente de Google y Unreal Engine');
-            loadProjectSummary('pcombinar', 'proyectos/dbv-combinar-correspondencia.html', 'images/dbv/combinarcorrespondencia.webp', 'images/dbv/combinarcorrespondencia-full.webp', 'DBV Combinar Correspondencia', 'Complemento gratuito de Microsoft Word para la creación de combinación de correspondencia avanzada');
-            loadProjectSummary('pcomunidadureal', 'https://communities.unrealengine.com/malaga/', 'images/dbv/proyectos/comunidadunreal.webp', 'images/dbv/proyectos/comunidadunreal-full.webp', 'Comunidad Unreal Engine Málaga', 'Comunidad Oficial de desarrolladores de Unreal Engine en Málaga');
-            loadProjectSummary('pbio4res', 'https://caesium.lcc.uma.es/Bio4Res/bio4res-at-paams-2024/', 'images/dbv/proyectos/bio4res.webp', 'images/dbv/proyectos/bio4res-full.webp', 'BIO4Res', 'Proyecto de investigación sobre nuevas técnicas de optimización bioinspiradas para la resiliencia y la sostenibilidad. Financiado por el Ministerio de Ciencia e Innovación.');
-            loadProjectSummary('pcalia', 'https://calia.app', 'images/dbv/proyectos/calia.webp', 'images/dbv/proyectos/calia-full.webp', 'CALIA', 'La atención al cliente del futuro.');
-        });
-  </script>
+title: Proyectos | David Bueno Vallejo
 ---
+
 <div class="content-wrap">
     <div class="container clearfix">
-        <!-- Portfolio Items
-					============================================= -->
+        <div class="heading-block center">
+            <h1>Proyectos Destacados</h1>
+            <span>Una selección de proyectos de investigación, desarrollo y consultoría.</span>
+        </div>
+
         <div id="portfolio" class="portfolio row grid-container gutter-30" data-layout="fitRows">
-            <article id="pcemi" class="portfolio-item col-sm-6 col-12 pf-media pf-icons"></article>
-            <article id="ppatente" class="portfolio-item col-sm-6 col-12 pf-media pf-icons"></article>
-            <article id="pgrafoscopico" class="portfolio-item col-sm-6 col-12 pf-media pf-icons"></article>
-            <article id="pai-catalog" class="portfolio-item col-sm-6 col-12 pf-media pf-icons"></article>
-            <article id="pcalia" class="portfolio-item col-sm-6 col-12 pf-media pf-icons"></article>
-            <article id="pbio4res" class="portfolio-item col-sm-6 col-12 pf-media pf-icons"></article>
-            <article id="pcomunidadureal" class="portfolio-item col-sm-6 col-12 pf-media pf-icons">
+            
+            <!-- Bucle Mágico para generar todos los proyectos -->
+            {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+            {% for project in sorted_projects %}
+            <article class="portfolio-item col-sm-6 col-12 pf-media pf-icons">
+                <div class="grid-inner">
+                    <div class="portfolio-image">
+                        <a href="{{ project.url | relative_url }}">
+                            <img src="{{ project.image_thumb }}" alt="{{ project.title }}">
+                        </a>
+                        <div class="bg-overlay">
+                            <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                                <a href="{{ project.image_full }}" class="overlay-trigger-icon bg-light text-dark" data-lightbox="image" title="Image"><i class="uil uil-plus"></i></a>
+                                <a href="{{ project.url | relative_url }}" class="overlay-trigger-icon bg-light text-dark"><i class="uil uil-ellipsis-h"></i></a>
+                            </div>
+                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                        </div>
+                    </div>
+                    <div class="portfolio-desc">
+                        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+                        <span>{{ project.excerpt }}</span>
+                    </div>
+                </div>
             </article>
-            <article id="puniversalplatform" class="portfolio-item col-sm-6 col-12 pf-media pf-icons">
-            </article>
-            <article id="pevumax" class="portfolio-item col-sm-6 col-12 pf-media pf-icons"></article>
-            <article id="pvictoria" class="portfolio-item col-sm-6 col-12 pf-media pf-icons"></article>
-            <article id="pcombinar" class="portfolio-item col-sm-6 col-12 pf-media pf-icons"></article>
-
-
-        </div><!-- #portfolio end -->
-
+            {% endfor %}
+            
+        </div>
     </div>
 </div>

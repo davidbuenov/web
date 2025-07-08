@@ -13,6 +13,11 @@ permalink: /:categories/:year/:month/:day/:title:output_ext # URLs amigables par
 plugins:
   - jekyll-sitemap
 
+collections:
+  projects:
+    output: true
+    permalink: /proyectos/:path/
+
 # --- Excluir archivos del procesamiento ---
 # No es necesario que Jekyll procese estas carpetas
 exclude:
