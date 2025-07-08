@@ -12,11 +12,18 @@ permalink: /:categories/:year/:month/:day/:title:output_ext # URLs amigables par
 # --- Plugins ---
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
 collections:
   projects:
     output: true
     permalink: /proyectos/:path/
+
+  conferencias:
+    output: true
+    permalink: /conferencias/:name/
+
 
 # --- Excluir archivos del procesamiento ---
 # No es necesario que Jekyll procese estas carpetas

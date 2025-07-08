@@ -265,21 +265,18 @@ function loadHeaderFooter() {
 								 
 							  </li>
 							  <li class="menu-item">
-								  <a class="menu-link" href="/formacion.html">
+								  <a class="menu-link" href="/conferencias.html">
 									  <div>Conferencias y Divulgación</div>
 								  </a>
 								  <ul class="sub-menu-container">
 									  <li class="menu-item">
-										  <a class="menu-link" href="/formacion.html#content"><div>Conferencias</div></a>
+										  <a class="menu-link" href="/conferencias.html"><div>Conferencias</div></a>
 									  </li>
 									  <li class="menu-item">
-										  <a class="menu-link" href="/formacion.html#courses"><div>Formación</div></a>
+										  <a class="menu-link" href="/formacion.html"><div>Formación</div></a>
 									  </li>
 									  <li class="menu-item">
-										  <a class="menu-link" href="/formacion.html#divulgacion"><div>Divulgación</div></a>
-									  </li>
-									  <li class="menu-item">
-										  <a class="menu-link" href="/formacion.html#galeria"><div>Galería de Imágenes</div></a>
+										  <a class="menu-link" href="/conferencias.html#galeria"><div>Galería de Imágenes</div></a>
 									  </li>
 								  </ul>
 							  </li>

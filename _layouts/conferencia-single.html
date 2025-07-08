@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="content-wrap">
+    <div class="container clearfix">
+        <div class="row">
+
+            <!-- Imagen de la Conferencia -->
+            <div class="col-lg-8 portfolio-single-image">
+                <a href="#"><img src="{{ page.image | relative_url }}" alt="{{ page.title }}"></a>
+            </div>
+
+            <!-- Contenido de la Conferencia -->
+            <div class="col-lg-4 portfolio-single-content">
+                <div class="fancy-title title-bottom-border">
+                    <h2>{{ page.title }}</h2>
+                    <h3 class="fw-normal">{{ page.subtitle }}</h3>
+                </div>
+                <p>{{ page.description }}</p>
+
+                <div class="line"></div>
+
+                <!-- Metadatos -->
+                <ul class="portfolio-meta bottommargin">
+                    <li><span><i class="icon-calendar3"></i>Fecha:</span> {{ page.date | date: "%d de %B de %Y" }}</li>
+                    {% if page.link %}
+                        <li><span><i class="icon-link"></i>Web del Evento:</span> <a href="{{ page.link }}" target="_blank">Ver más</a></li>
+                    {% endif %}
+                    {% if page.link_video %}
+                        <li><span><i class="icon-line-video"></i>Vídeo:</span> <a href="{{ page.link_video }}" target="_blank">Ver la grabación</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>

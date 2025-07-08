@@ -1,0 +1,403 @@
+---
+layout: default
+title: Conferencias y Divulgación
+---
+
+<div class="content-wrap">
+    <div class="container clearfix">
+
+        <!-- Sección de Próximas Conferencias -->
+        <div class="section topmargin mb-0 border-bottom-0">
+            <div class="container clearfix">
+                <div class="heading-block center m-0">
+                    <h3>Próximas Conferencias</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center gutter-50 col-mb-50">
+            {% assign future_conferences = site.conferencias | where_exp: "item", "item.date > site.time" | sort: "date" %}
+            {% if future_conferences.size > 0 %}
+                {% for conf in future_conferences %}
+                    <div class="col-lg-12">
+                        <!-- Aquí podrías incluir un snippet de la tarjeta de la conferencia -->
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="col-12 text-center"><p>Actualmente no hay conferencias programadas. ¡Vuelve pronto!</p></div>
+            {% endif %}
+        </div>
+        
+        <div class="divider"><i class="icon-circle"></i></div>
+
+        <!-- Sección de Conferencias Recientes -->
+        <div class="section topmargin mb-0 border-bottom-0">
+            <div class="container clearfix">
+                <div class="heading-block center m-0">
+                    <h3>Conferencias Recientes</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center gutter-50 col-mb-50">
+            {% assign past_conferences = site.conferencias | where_exp: "item", "item.date <= site.time" | sort: "date" | reverse %}
+            {% for conf in past_conferences limit:10 %}
+                 <div class="col-lg-12">
+                    {% include conference_card.html conf=conf %}
+                 </div>
+            {% endfor %}
+        </div>
+
+        <section id="galeria">
+			<div class="section topmargin mb-0 border-bottom-0">
+				<div class="container clearfix">
+					<div class="heading-block center m-0">
+						<h3>Galería de Imágenes</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Portfolio Items
+					============================================= -->
+			<div class="portfolio grid-container row g-0">
+
+				<article class="portfolio-item col-lg-6 col-md-4 col-sm-6 col-12 wide">
+					<div class="grid-inner">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="images/dbv/davidreleevant.webp" alt="Open Imagination">
+							</a>
+							<div class="bg-overlay">
+								<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
+									<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
+										data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
+										<h3><a href="images/dbv/davidreleevant.webp" class=" bg-light text-dark"
+												data-hover-animate="fadeInDownSmall"
+												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"
+												data-lightbox="image" title="Image">2022
+												Releevant</a></h3>
+										<span>¿Por qué estamos aquí?</span>
+
+
+									</div>
+
+									<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+								</div>
+							</div>
+						</div>
+				</article>
+
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
+					<div class="grid-inner">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="images/dbv/conferencias/201502.webp" alt="2015">
+							</a>
+							<div class="bg-overlay">
+								<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
+									<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
+										data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
+										<h3><a href="images/dbv/conferencias/201502.webp" class=" bg-light text-dark"
+												data-hover-animate="fadeInDownSmall"
+												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"
+												data-lightbox="image" title="Image">Conferencia
+												2015</a></h3>
+										<span><a href="#"> </a></span>
+									</div>
+								</div>
+								<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
+					<div class="grid-inner">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="images/dbv/conferencias/201903concursodatosabiertos.webp"
+									alt="Mac Sunglasses">
+							</a>
+							<div class="bg-overlay">
+								<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
+									<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
+										data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
+										<h3><a href="images/dbv/conferencias/201903concursodatosabiertos.webp"
+												class=" bg-light text-dark" data-hover-animate="fadeInDownSmall"
+												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"
+												data-lightbox="image" title="Image">2019 Concurso de datos abiertos</a>
+										</h3>
+										<span>Entrega de premios</span>
+									</div>
+								</div>
+								<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="portfolio-item col-lg-6 col-md-4 col-sm-6 col-12 wide">
+					<div class="grid-inner">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="images/dbv/conferencias/2018121FEMP.webp" alt="Open Imagination">
+							</a>
+							<div class="bg-overlay">
+								<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
+									<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
+										data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
+										<h3><a href="images/dbv/conferencias/2018121FEMP.webp"
+												class=" bg-light text-dark" data-hover-animate="fadeInDownSmall"
+												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"
+												data-lightbox="image" title="Image">2018 FEMP</a>
+										</h3>
+										<span>Presentación Enciclopedia Servicios Certificación</span>
+									</div>
+								</div>
+								<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="portfolio-item col-lg-6 col-md-4 col-sm-6 col-12 wide">
+					<div class="grid-inner">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="images/dbv/conferencias/201810CuadroMandosDip1.webp" alt="Console Activity">
+							</a>
+							<div class="bg-overlay">
+								<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
+									<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
+										data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
+										<h3><a href="images/dbv/conferencias/201810CuadroMandosDip1.webp"
+												class=" bg-light text-dark" data-hover-animate="fadeInDownSmall"
+												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"
+												data-lightbox="image" title="Image">2018 Diputación de Málaga</a></h3>
+										<span>Presentación cuadro de mandos integral</span>
+									</div>
+								</div>
+								<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
+					<div class="grid-inner">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="images/dbv/conferencias/201810CuadroMandosDip2.webp" alt="Open Imagination">
+							</a>
+							<div class="bg-overlay">
+								<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
+									<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
+										data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
+										<h3><a href="images/dbv/conferencias/201810CuadroMandosDip2.webp"
+												class=" bg-light text-dark" data-hover-animate="fadeInDownSmall"
+												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"
+												data-lightbox="image" title="Image">2018 Diputación de Málaga</a></h3>
+										<span>Presentación de cuadro de mandos integral</span>
+									</div>
+								</div>
+								<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
+					<div class="grid-inner">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="images/dbv/conferencias/201810.webp" alt="Backpack Contents">
+							</a>
+							<div class="bg-overlay">
+								<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
+									<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
+										data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
+										<h3><a href="images/dbv/conferencias/201810.webp" class=" bg-light text-dark"
+												data-hover-animate="fadeInDownSmall"
+												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"
+												data-lightbox="image" title="Image">2018 Ayuntamiento
+												de Málaga</a></h3>
+										<span><a href="#"> </a></span>
+									</div>
+								</div>
+								<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="portfolio-item col-lg-6 col-md-4 col-sm-6 col-12 wide">
+					<div class="grid-inner">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="images/dbv/conferencias/201805PlanetaChatbotSegittur.webp"
+									alt="Open Imagination">
+							</a>
+							<div class="bg-overlay">
+								<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
+									<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
+										data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
+										<h3><a href="images/dbv/conferencias/201805PlanetaChatbotSegittur.webp"
+												class=" bg-light text-dark" data-hover-animate="fadeInDownSmall"
+												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"
+												data-lightbox="image" title="Image">2018 Planeta Chatbot /Segittur</a>
+										</h3>
+										<span>Presentación de Victoria la Malagueña</span>
+									</div>
+								</div>
+								<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
+					<div class="grid-inner">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="images/dbv/conferencias/20180316AytoRGPD.webp" alt="Locked Steel Gate">
+							</a>
+							<div class="bg-overlay">
+								<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
+									<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
+										data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
+										<h3><a href="images/dbv/conferencias/20180316AytoRGPD.webp"
+												class=" bg-light text-dark" data-hover-animate="fadeInDownSmall"
+												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"
+												data-lightbox="image" title="Image">2018 Presentación RGPD</a></h3>
+										<span>Ayuntamiento de Málaga</span>
+									</div>
+								</div>
+								<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
+					<div class="grid-inner">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="images/dbv/conferencias/201711Aslan.webp" alt="Mac Sunglasses">
+							</a>
+							<div class="bg-overlay">
+								<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
+									<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
+										data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
+										<h3><a href="images/dbv/conferencias/201711Aslan.webp"
+												class=" bg-light text-dark" data-hover-animate="fadeInDownSmall"
+												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"
+												data-lightbox="image" title="Image">Presentación
+												Aslan 2018</a></h3>
+										<span><a href="#"> </a></span>
+									</div>
+								</div>
+								<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="portfolio-item col-lg-6 col-md-4 col-sm-6 col-12 wide">
+					<div class="grid-inner">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="images/dbv/conferencias/201706CEASevilla.webp" alt="Open Imagination">
+							</a>
+							<div class="bg-overlay">
+								<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
+									<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
+										data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
+										<h3><a href="images/dbv/conferencias/201706CEASevilla.webp"
+												class=" bg-light text-dark" data-hover-animate="fadeInDownSmall"
+												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"
+												data-lightbox="image" title="Image">2017 Confederación de Empresarios de
+												Andalucía</a></h3>
+										<span>Conferencia sobre ciberseguridad</span>
+									</div>
+								</div>
+								<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="portfolio-item col-lg-6 col-md-4 col-sm-6 col-12 wide">
+					<div class="grid-inner">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="images/dbv/conferencias/201604DesayunoTecnologicoIngenia.webp"
+									alt="Console Activity">
+							</a>
+							<div class="bg-overlay">
+								<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
+									<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
+										data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
+										<h3><a href="images/dbv/conferencias/201604DesayunoTecnologicoIngenia.webp"
+												class=" bg-light text-dark" data-hover-animate="fadeInDownSmall"
+												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"
+												data-lightbox="image" title="Image">Desayunos Tecnológicos de
+												Ingenia</a>
+										</h3>
+										<span>Transformación Digital del Ayuntamiento de Málaga</span>
+									</div>
+								</div>
+								<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
+					<div class="grid-inner">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="images/dbv/conferencias/201903DataBeers.webp" alt="Open Imagination">
+							</a>
+							<div class="bg-overlay">
+								<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
+									<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
+										data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
+										<h3><a href="images/dbv/conferencias/201903DataBeers.webp"
+												class=" bg-light text-dark" data-hover-animate="fadeInDownSmall"
+												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"
+												data-lightbox="image" title="Image">2019 Databeers</a></h3>
+										<span></span>
+									</div>
+								</div>
+								<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
+					<div class="grid-inner">
+						<div class="portfolio-image">
+							<a href="#">
+								<img src="images/dbv/conferencias/201410PlataformasCiudad.webp" alt="Backpack Contents">
+							</a>
+							<div class="bg-overlay">
+								<div class="bg-overlay-content flex-column" data-hover-animate="fadeIn">
+									<div class="portfolio-desc p-0 center" data-hover-animate="fadeInDownSmall"
+										data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350">
+										<h3><a href="images/dbv/conferencias/201410PlataformasCiudad.webp"
+												class=" bg-light text-dark" data-hover-animate="fadeInDownSmall"
+												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"
+												data-lightbox="image" title="Image">2014 Plataformas de Ciudad</a></h3>
+										<span><a href="#"> </a></span>
+									</div>
+								</div>
+								<div class="bg-overlay-bg" data-hover-animate="fadeIn"></div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+			</div><!-- #portfolio end -->
+		</section>
+
+    </div>
+</div>

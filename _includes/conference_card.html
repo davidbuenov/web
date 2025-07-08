@@ -1,0 +1,37 @@
+<!-- _includes/conference_card.html -->
+{% if include.conf.dark_card %}
+<div class="card border-0 bg-dark dark imagescale h-shadow-sm shadow-ts">
+    <div class="row g-0 align-items-center">
+        <div class="col-md-4 d-flex align-self-stretch overflow-hidden">
+            <img src="{{ include.conf.image | relative_url }}" class="rounded-start" alt="{{ include.conf.title }}">
+        </div>
+        <div class="col-md-8 p-4">
+            <div class="card-body">
+                <h3 class="card-title">{{ include.conf.title }}</h3>
+                <h4 class="card-title">{{ include.conf.subtitle }}</h4>
+                <p class="card-text mb-2">{{ include.conf.description }}</p>
+                <p class="card-text"><small class="text-muted">{{ include.conf.date | date: "%d de %B de %Y" }}</small></p>
+               {% if include.conf.link and include.conf.link != "" %}<a href="{{ include.conf.link }}" class="btn btn-primary">Ver</a>{% endif %}
+               {% if include.conf.link_video and include.conf.link_video != "" %}<a href="{{ include.conf.link_video }}" class="btn btn-primary">Vídeo</a>{% endif %}            </div>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="card border-0 imagescale h-shadow-sm shadow-ts">
+    <div class="row g-0 align-items-center">
+        <div class="col-md-8 p-4">
+            <div class="card-body">
+                <h3 class="card-title">{{ include.conf.title }}</h3>
+                <h4 class="card-title">{{ include.conf.subtitle }}</h4>
+                <p class="card-text mb-2">{{ include.conf.description }}</p>
+                <p class="card-text"><small class="text-muted">{{ include.conf.date | date: "%d de %B de %Y" }}</small></p>
+                {% if include.conf.link and include.conf.link != "" %}<a href="{{ include.conf.link }}" class="btn btn-primary">Ver</a>{% endif %}
+                {% if include.conf.link_video and include.conf.link_video != "" %}<a href="{{ include.conf.link_video }}" class="btn btn-primary">Vídeo</a>{% endif %}
+            </div>
+        </div>
+        <div class="col-md-4 d-flex align-self-stretch overflow-hidden">
+            <img src="{{ include.conf.image | relative_url }}" class="rounded-end" alt="{{ include.conf.title }}">
+        </div>
+    </div>
+</div>
+{% endif %}

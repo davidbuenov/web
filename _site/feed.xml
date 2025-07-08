@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://davidbuenov.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://davidbuenov.com/" rel="alternate" type="text/html" /><updated>2025-07-09T00:18:31+02:00</updated><id>https://davidbuenov.com/feed.xml</id><title type="html">David Bueno Vallejo</title><subtitle>Web personal de David Bueno Vallejo. Explorando la tecnología a través de la investigación, la consultoría, la docencia y la divulgación.</subtitle><entry><title type="html">Migrando el blog…</title><link href="https://davidbuenov.com/2025/07/07/mi-primer-articulo.html" rel="alternate" type="text/html" title="Migrando el blog…" /><published>2025-07-07T10:00:00+02:00</published><updated>2025-07-07T10:00:00+02:00</updated><id>https://davidbuenov.com/2025/07/07/mi-primer-articulo</id><content type="html" xml:base="https://davidbuenov.com/2025/07/07/mi-primer-articulo.html"><![CDATA[<p>Anteriormente mantenía el blog en <a href="https://davidbuenov.blogger.com/">https://davidbuenov.blogger.com/</a>, pero a partir de ahora lo integraremos en esta web. Allí tenía también el <a href="https://cemimalaga.blogspot.com/">blog del CEMI</a> hasta 2015.</p>]]></content><author><name>David Bueno Vallejo</name></author><summary type="html"><![CDATA[Anteriormente mantenía el blog en https://davidbuenov.blogger.com/, pero a partir de ahora lo integraremos en esta web. Allí tenía también el blog del CEMI hasta 2015.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://davidbuenov.com/images/dbv/blog/blog.webp" /><media:content medium="image" url="https://davidbuenov.com/images/dbv/blog/blog.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Aprendiendo Unreal Engine 5. ¿Por dónde empiezo?</title><link href="https://davidbuenov.com/2023/03/02/aprendiendo-unreal-engine-5.html" rel="alternate" type="text/html" title="Aprendiendo Unreal Engine 5. ¿Por dónde empiezo?" /><published>2023-03-02T12:00:00+01:00</published><updated>2023-03-02T12:00:00+01:00</updated><id>https://davidbuenov.com/2023/03/02/aprendiendo-unreal-engine-5</id><content type="html" xml:base="https://davidbuenov.com/2023/03/02/aprendiendo-unreal-engine-5.html"><![CDATA[<p>Desde la presentación de la Comunidad Oficial de desarrolladores de Unreal Engine de Málaga, he recibido muchas consultas sobre por dónde se podría empezar. Podríamos considerar 3 niveles:</p>
+<ol>
+  <li>Formación gratuita,</li>
+  <li>Formación de bajo coste</li>
+  <li>Cursos o masters completos.</li>
+</ol>
+
+<p>Cada opción tiene su interés dependiendo de nuestra dedicación y de la capacidad que tengamos de organizarnos solos o si preferimos aprender de una forma más guiada. A continuación, desarrollo con ejemplos las distintas opciones. Esta entrada se irá actualizando con nuevos enlaces.</p>
+
+<h3 id="1-formación-gratuita">1. Formación Gratuita</h3>
+
+<p>Definitivamente, si no tienes muy claro si esto va a ser tu futuro y solo quieres ver si te gusta, este es el mejor punto de inicio. Básicamente buscaría formación en Youtube y en la web oficial de desarrolladores, que está muy bien organizada.</p>
+
+<p>En la <strong><a href="https://dev.epicgames.com/community/">web de desarrolladores de Epic Games</a></strong>, encontramos distintos tipos de formación. Algunos son tutoriales/cursos realizados por Epic Games y otros por desarrolladores. Yo empezaría por los oficiales y filtraría por las <strong>rutas de aprendizaje</strong> (unas 16). Por ejemplo, la ruta <a href="https://dev.epicgames.com/community/learning/paths/1Q/welcome-to-game-development">Welcome to Game Development</a> puede ser una buena introducción, o la ruta de <a href="https://dev.epicgames.com/community/learning/paths/oV/welcome-to-unreal-engine">Welcome to Unreal Engine</a>.</p>
+
+<p>Además, en <strong>YouTube</strong> podemos encontrar muchos tutoriales específicos o generales. Algunos canales recomendados:</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/c/UnrealEngine">Canal oficial de Unreal Engine</a></li>
+  <li><a href="https://www.youtube.com/c/cinematographyDB">Matt Workman (Producción Virtual)</a></li>
+  <li><a href="https://www.youtube.com/c/JSFILMZ">JSFILMZ (Orientado a producción Virtual)</a></li>
+  <li><a href="https://www.youtube.com/c/Jobutsu">Jobutsu (Centrado en Metahuman)</a></li>
+  <li><a href="https://www.youtube.com/c/WINBUSH">WINBUSH (Unreal en general y captura de movimiento)</a></li>
+  <li><a href="https://www.youtube.com/c/UnrealSensei">Unreal Sensei (Generalista)</a></li>
+  <li><a href="https://www.youtube.com/c/UNFGames">UNF Games (Generales)</a></li>
+  <li><a href="https://www.youtube.com/c/WilliamFaucher">William Faucher (Generalista 3D con Cinemáticas y digitalización)</a></li>
+  <li><a href="https://www.youtube.com/c/CapturingReality">Capturing Reality</a></li>
+  <li><a href="https://www.youtube.com/c/Rokoko">Rokoko (Captura de Movimiento)</a></li>
+  <li><a href="https://www.youtube.com/c/Reallusion">Reallusion (Metahuman y sincronización de iClone con Unreal)</a></li>
+  <li><a href="https://www.youtube.com/c/Pixotope">Pixotope (Producción Virtual)</a></li>
+  <li><a href="https://www.youtube.com/playlist?list=PLrY5i03-qF1H_A-V_Yg9p-a4b_a-2YEaJ">Lista de Videos para hacer VR en UE5 usando el VR Expansion plugin</a></li>
+  <li><a href="https://www.youtube.com/watch?v=s5p_0-J_28s">Unreal C++ course - The Game Dev Cave (C++ Unreal)</a></li>
+  <li><a href="https://www.youtube.com/@davidbuenov">Videos y tutoriales de Unreal de David Bueno</a> (No podía faltar los vídeos de mi canal 😅)</li>
+</ul>
+
+<h3 id="2-formación-de-bajo-coste">2. Formación de bajo coste</h3>
+
+<p>Si nos gusta el autoaprendizaje y queremos aprender con algo más estructurado, también se puede adquirir algún curso en plataformas como Udemy o Coursera. Aunque los precios pueden aparecer altos, normalmente hacen ofertas y se pueden conseguir por precios reducidos entre 12 y 20€.</p>
+
+<h4 id="udemy">Udemy</h4>
+<ul>
+  <li><a href="https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/">Unreal Engine Blueprint Game Developer</a> (muy bueno, pero hace falta que lo actualicen a Unreal 5)</li>
+  <li><a href="https://www.udemy.com/course/unreal-engine-5-cpp-developer-learn-cpp-make-video-games/">Unreal Engine 5 C++ Developer: Learn C++ &amp; Make Video Games</a> (Recomendado si se va a empezar con C++ en Unreal)</li>
+  <li><a href="https://www.udemy.com/course/unreal-engine-5-cpp-the-ultimate-game-developer-course/">Unreal Engine 5 C++ The Ultimate Game Developer Course</a></li>
+  <li><a href="https://www.udemy.com/course/unreal-engine-5-cpp-multiplayer-master/">Unreal C++ Multiplayer Master: Intermediate Game Development</a> (Recomendado para juegos en red)</li>
+  <li><a href="https://www.udemy.com/course/unreal-engine-5-vr-course-for-steamvr-and-oculus-vr/">Unreal Engine 5 VR Blueprint Crash Course. Curso de Steam VR y Oculus para UE5</a></li>
+</ul>
+
+<h4 id="gamedevtv">GameDev.tv</h4>
+<p>En <strong><a href="https://www.gamedev.tv/">GameDev.tv</a></strong> hay muchos cursos interesantes para aprender programación de videojuegos, tanto en Unreal como en otras plataformas (algunos están también en Udemy, por lo que se puede elegir el que tenga mejor precio). También ofrecen packs de cursos.</p>
+<ul>
+  <li><a href="https://www.gamedev.tv/p/unreal-engine-5-courses">Cursos de Unreal en GameDev.tv</a></li>
+</ul>
+
+<h3 id="3-cursos-o-masters-completos">3. Cursos o Masters Completos</h3>
+
+<p>Esta última opción está orientada a cursos presenciales, semi-presenciales o virtuales con un profesor que puede guiarnos. Es la opción recomendada para quien necesite una rutina de trabajo y le guste aprender con un profesor, compañeros y la posibilidad de realizar proyectos complejos para su portfolio.</p>
+
+<ul>
+  <li><a href="https://www.eoi.es/es/cursos">Cursos EOI Subvencionados sobre Unreal Engine</a></li>
+  <li><a href="https://www.mastervideojuegos.uma.es/">Máster Propio en Creación de Videojuegos de la Universidad de Málaga</a></li>
+  <li><a href="https://www.connector.ut-hub.com/">UT-HUB - Formación Profesional en Nuevas Tecnologías</a></li>
+  <li><a href="https://www.butic.es/unreal-engine/">Cursos de Butic sobre Unreal Engine y Producción Virtual</a></li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Una guía completa con recursos gratuitos, de bajo coste y masters para iniciarse en el mundo de Unreal Engine 5, basada en las consultas de la comunidad de desarrolladores de Málaga.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://davidbuenov.com/images/dbv/proyectos/comunidadunreal.webp" /><media:content medium="image" url="https://davidbuenov.com/images/dbv/proyectos/comunidadunreal.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
