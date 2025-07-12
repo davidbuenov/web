@@ -29,75 +29,24 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/custom.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />-->
-
-
+    
     <link rel="stylesheet" href="/css/dark.css" type="text/css" />
     <link rel="stylesheet" href="/css/animate.css" type="text/css" />
     <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css" />
-
-
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4HDFQP7CKZ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-4HDFQP7CKZ');
     </script>
-
-
-   
-    <!-- Etiquetas OG
-    	============================================= -->
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://davidbuenov.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="David Bueno Vallejo. Home Page">
-    <meta property="og:description"
-        content="Web personal de David Bueno Vallejo que se realiza con el objetivo de centrar toda la información publicada en relación a sus trabajos. Se muestran diferentes trabajos relacionados con Docencia, chatbots (Victoria la Malagueña), Aplicaciones desarrolladas, pantentes publicadas, experiencia laboral y docente, premios obtenidos y contacto entre otros temas.">
-    <meta property="og:image" content="https://davidbuenov.com/images/logo.jpg">
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="davidbuenov.com">
-    <meta property="twitter:url" content="https://davidbuenov.com/">
-    <meta name="twitter:title" content="David Bueno Vallejo. Home Page">
-    <meta name="twitter:description"
-        content="Web personal de David Bueno Vallejo que se realiza con el objetivo de centrar toda la información publicada en relación a sus trabajos. Se muestran diferentes trabajos relacionados con Docencia, chatbots (Victoria la Malagueña), Aplicaciones desarrolladas, pantentes publicadas, experiencia laboral y docente, premios obtenidos y contacto entre otros temas.">
-    <meta name="twitter:image" content="https://davidbuenov.com/images/logo.jpg">
-
-
-    <!-- Favicon   
-============================================= -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/dbv/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/dbv/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/dbv/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/dbv/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/dbv/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/dbv/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/dbv/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/dbv/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/dbv/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/images/dbv/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/dbv/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/dbv/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/dbv/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/images/dbv/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/images/dbv/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-
-
-    <!-- Document Title
-	============================================= -->
+    
+    <!-- Document Title -->
     <title>Conferencias y Divulgación | David Bueno Vallejo</title>
-
-    <!-- Documentacion SEO Jekyll-->
+    
+    <!-- SEO y Favicon -->
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Conferencias y Divulgación | David Bueno Vallejo</title>
 <meta name="generator" content="Jekyll v4.4.1" />
@@ -115,6 +64,8 @@
 {"@context":"https://schema.org","@type":"WebPage","description":"Web personal de David Bueno Vallejo. Explorando la tecnología a través de la investigación, la consultoría, la docencia y la divulgación.","headline":"Conferencias y Divulgación","url":"https://davidbuenov.com/conferencias.html"}</script>
 <!-- End Jekyll SEO tag -->
 
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 </head>
 
@@ -125,9 +76,12 @@
     <div id="wrapper">
      
         <div id="top-bar"></div>
+        <header id="header" class="full-header transparent-header semi-transparent" data-sticky-class="not-dark">
+            <div id="header-wrap">	</div>
+        </header>
   
-        <!-- Macador header-->
-           <header id="header" class="full-header transparent-header semi-transparent" data-sticky-class="not-dark">
+        <!-- Contenido principal de cada página -->
+          <header id="header" class="full-header transparent-header semi-transparent" data-sticky-class="not-dark">
 			<div id="header-wrap"> </div>
   </header>
 
@@ -752,15 +706,33 @@
         <!-- Footer
 		============================================= -->
         <footer id="footer" class="dark"></footer>
+        <!-- _includes/chatbot_widget.html -->
+
+<!-- =============================================
+    WIDGET DEL CHATBOT NATIVO DE VICTORIA
+============================================== -->
+<!-- Botón Flotante para abrir el chat -->
+<!-- Botón Flotante con el Avatar de Victoria -->
+<img src="/images/dbv/victoria-chat.webp" alt="Abrir chat con Victoria" id="victoria-chat-button" class="chatbot-avatar-trigger">
+
+<!-- Ventana del Chat (Oculta por defecto) -->
+<div id="victoria-chat-window" class="chatbot-window is-hidden">
+     <div class="chatbot-header">
+        <h5 class="mb-0">Habla con Victoria IA</h5>
+       <i id="chat-fullscreen-toggle" class="fa-solid fa-expand" style="cursor: pointer;" title="Maximizar / Restaurar"></i>  </div>
+    <div id="chat-messages" class="chatbot-messages">
+        <!-- Los mensajes del chat aparecerán aquí dinámicamente -->
+    </div>
+    <div class="chatbot-input-area">
+        <div class="input-group">
+            <input type="text" id="chat-input" class="form-control" placeholder="Escribe tu mensaje...">
+            <button id="chat-send" class="chatbot-send-button"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>
+<!-- FIN DEL WIDGET -->
 
   
-        <!-- #header end -->
-
-
-
-
-
-
 
         <!-- Footer
 		============================================= -->
@@ -768,125 +740,21 @@
 
     </div><!-- #wrapper end -->
 
-    <!-- Scripts
-	============================================= -->
-
     <!-- Go To Top
 	============================================= -->
-    <div id="gotoTop" class="uil uil-angle-up"></div>
+	<div id="gotoTop" class="uil uil-angle-up"></div>
 
-    <!-- JavaScripts
+   
+
+	<!-- JavaScripts Principales
 	============================================= -->
-    <script src="/js/dbv.js" onload="loadHeaderFooter()"></script>
-
-    <!-- Scripts especificos de esta pagina inyectados-->
+    <!-- Scripts generales de la web (cargados desde dbv.js) -->
+	<script src="/js/dbv.js" onload="loadHeaderFooter()"></script>
+    <script src="/js/plugins.min.js" defer></script>
+    <script src="/js/functions.bundle.js" defer></script>
+    
+    <!-- Scripts específicos de cada página (inyectados por Jekyll) -->
     
 
-    <!-- Footer Scripts se cargan en dbv.js
-	============================================= -->
-
-
-    <script src="/js/plugins.min.js" defer></script>
-
-    <script src="/js/functions.bundle.js" defer></script>
-
-<!-- =================================================================
-    INICIO DEL CHATBOT VICTORIA 2.0 (VERSIÓN WIDGET FLOTANTE)
-================================================================== -->
-<!-- 1. Estilos de BotUI -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui.min.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui-theme-default.css" />
-
-<!-- 2. Contenedor Principal del Widget -->
-<div class="chatbot-wrapper">
-    <!-- El contenedor del chat, inicialmente oculto -->
-    <div id="victoria-chatbot-container" class="chatbot-container is-hidden">
-        <bot-ui></bot-ui>
-    </div>
-
-    <!-- El botón que abre el chat -->
-    <a href="#" id="chatbot-trigger" class="chatbot-trigger">
-        <img src="/images/dbv/victoria-chat.webp" alt="Abrir chat con Victoria">
-        <!--<i class="uil uil-comments-alt"></i>-->
-    </a>
-</div>
-
-<!-- 3. Librerías (Vue y BotUI) -->
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/botui/build/botui.min.js"></script>
-
-<!-- 4. Lógica de Inicialización y Control (VERSIÓN FINAL CON MEMORIA) -->
-<script>
-    var botApp = new Vue({
-        el: '#victoria-chatbot-container',
-        data: {
-            botui: null,
-            // AQUÍ GUARDAMOS LA MEMORIA DE VICTORIA
-            chatHistory: [] 
-        },
-        mounted: function () {
-            this.botui = new BotUI(this.$el.id, { vue: Vue });
-            this.iniciarConversacion();
-        },
-        methods: {
-            iniciarConversacion: function () {
-                this.botui.message.add({
-                    delay: 800,
-                    content: '¡Hola! Soy Victoria, la asistente de IA de David. ¿Hablamos?'
-                }).then(() => {
-                    this.esperarRespuestaUsuario();
-                });
-            },
-            llamarVictoria: function(userMessage) {
-                var botui = this.botui;
-                botui.message.add({ delay: 500, loading: true }).then(index => {
-                    const functionUrl = 'https://chatwithvictoria-ff5653t6ka-uc.a.run.app'; // TU URL
-
-                    // Enviamos el mensaje Y el historial
-                    fetch(functionUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ data: { message: userMessage, history: this.chatHistory } })
-                    })
-                    .then(response => response.json())
-                    .then(result => {
-                        const data = result.result;
-                        const reply = data.reply || data.error || "He tenido un problema para responder.";
-                        
-                        // Actualizamos el mensaje de "escribiendo..."
-                        botui.message.update(index, { content: reply });
-
-                        // ¡ACTUALIZAMOS LA MEMORIA!
-                        this.chatHistory.push({ role: 'user', parts: [{ text: userMessage }] });
-                        this.chatHistory.push({ role: 'model', parts: [{ text: reply }] });
-
-                        // Volvemos a esperar la respuesta
-                        this.esperarRespuestaUsuario();
-                    });
-                });
-            },
-            esperarRespuestaUsuario: function () {
-                var botui = this.botui;
-                botui.action.text({
-                    autoHide: false,
-                    action: { placeholder: 'Escribe tu pregunta...' }
-                }).then(res => {
-                   
-                    // Llamamos a la función que contacta con la IA
-                    this.llamarVictoria(res.value);
-                });
-            }
-        }
-    });
-
-    const chatbotTrigger = document.getElementById('chatbot-trigger');
-    const chatbotContainer = document.getElementById('victoria-chatbot-container');
-    chatbotTrigger.addEventListener('click', function(e) {
-        e.preventDefault();
-        chatbotContainer.classList.toggle('is-hidden');
-    });
-</script>
-<!-- FIN DEL CÓDIGO DEL CHATBOT -->
 </body>
-
 </html>

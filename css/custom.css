@@ -15,49 +15,142 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Opcional: añade una sombra suave */
 }
 
-/* --- ESTILOS PARA EL CHATBOT VICTORIA 2.0 --- */
+/* =================================================================
+   ESTILOS COMPLETOS PARA EL CHATBOT DE VICTORIA (v2)
+==================================================================== */
 
-/* Contenedor principal del widget flotante */
-.chatbot-wrapper {
+/* --- 1. Contenedor de la Ventana del Chat --- */
+.chatbot-window {
+    /* ... (los estilos que ya teníamos aquí no cambian) ... */
+    position: fixed;
+    bottom: 120px; /* Un poco más arriba para dejar espacio al avatar */
+    right: 25px;
+    width: 370px;
+    height: 550px;
+    z-index: 1000;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    display: flex; 
+    flex-direction: column;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    overflow: hidden;
+}
+
+/* --- 2. Clase de Estado: Oculto --- */
+.chatbot-window.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px) scale(0.95);
+}
+
+/* --- 3. Cabecera del Chat --- */
+.chatbot-header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+/* ¡NUEVA REGLA! Hacemos el título blanco */
+.chatbot-header h5 {
+    color: #FFFFFF !important; 
+    margin-bottom: 0;
+}
+
+/* --- 4. Área de Mensajes --- */
+.chatbot-messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* ... (el resto de estilos de mensajes se quedan igual) ... */
+
+/* --- 5. Estilo para el nuevo botón-avatar --- */
+.chatbot-avatar-trigger {
     position: fixed;
     bottom: 25px;
     right: 50px;
-    z-index: 1000;
+    width: 80px;  /* Ajusta el tamaño como veas */
+    height: 120px;
+    cursor: pointer;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2)); /* Sombra más bonita para PNGs */
+    transition: transform 0.2s ease-out;
+    z-index: 1001;
 }
 
-/* El botón circular que abre el chat */
-.chatbot-trigger {
+.chatbot-avatar-trigger:hover {
+    transform: scale(1.1); /* Efecto sutil al pasar el ratón */
+}
+
+/* --- Estilos responsive y de pantalla completa ... --- */
+.chatbot-window.fullscreen {
+    /* ... (los estilos de fullscreen se quedan igual) ... */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    bottom: 0;
+    right: 0;
+}
+/* Estilo para cambiar el icono al maximizar */
+.chatbot-window.fullscreen #chat-fullscreen-toggle::before {
+    content: "\f066"; /* Este es el código unicode del icono 'compress' de Font Awesome */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+/* --- Estilos para el Input y el Botón de Enviar --- */
+.chatbot-input-area .input-group {
     display: flex;
     align-items: center;
+}
+
+.chatbot-input-area .form-control {
+    border-radius: 20px;
+    border-color: #e5e5e5;
+    transition: border-color .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+.chatbot-input-area .form-control:focus {
+    border-color: #0d6efd; /* Puedes usar tu color de marca aquí */
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.chatbot-send-button {
+    /* Reseteo y Diseño */
+    background-color: #0d6efd; /* Color principal de la marca */
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%; /* Círculo perfecto */
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+
+    /* Centrado del icono */
+    display: flex;
     justify-content: center;
-    width: 80px;
-    height: 80px;
- 
+    align-items: center;
+    
+    /* Transiciones suaves */
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.chatbot-trigger:hover {
+.chatbot-send-button:hover {
+    background-color: #0b5ed7; /* Tono más oscuro al pasar el ratón */
     transform: scale(1.1);
-    color: #FFFFFF;
 }
 
-/* La ventana del chat */
-.chatbot-container {
-    position: absolute;
-    bottom: 80px; /* 20px por encima del botón */
-    right: 0;
-    width: 350px;
-    height: 450px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-    overflow: hidden;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    transform-origin: bottom right;
+.chatbot-send-button i {
+    font-size: 16px;
+    line-height: 1;
+    /* Pequeño ajuste para centrar el icono del avión visualmente */
+    margin-left: 2px; 
 }
-
-/* Clase para ocultar/mostrar la ventana del chat con una animación suave */
-.chatbot-container.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(0.95) translateY(10px);
-

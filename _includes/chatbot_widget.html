@@ -1,0 +1,25 @@
+<!-- _includes/chatbot_widget.html -->
+
+<!-- =============================================
+    WIDGET DEL CHATBOT NATIVO DE VICTORIA
+============================================== -->
+<!-- Botón Flotante para abrir el chat -->
+<!-- Botón Flotante con el Avatar de Victoria -->
+<img src="/images/dbv/victoria-chat.webp" alt="Abrir chat con Victoria" id="victoria-chat-button" class="chatbot-avatar-trigger">
+
+<!-- Ventana del Chat (Oculta por defecto) -->
+<div id="victoria-chat-window" class="chatbot-window is-hidden">
+     <div class="chatbot-header">
+        <h5 class="mb-0">Habla con Victoria IA</h5>
+       <i id="chat-fullscreen-toggle" class="fa-solid fa-expand" style="cursor: pointer;" title="Maximizar / Restaurar"></i>  </div>
+    <div id="chat-messages" class="chatbot-messages">
+        <!-- Los mensajes del chat aparecerán aquí dinámicamente -->
+    </div>
+    <div class="chatbot-input-area">
+        <div class="input-group">
+            <input type="text" id="chat-input" class="form-control" placeholder="Escribe tu mensaje...">
+            <button id="chat-send" class="chatbot-send-button"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>
+<!-- FIN DEL WIDGET -->

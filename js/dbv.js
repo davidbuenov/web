@@ -4,15 +4,15 @@
  * @param {*} id
  * @param {*} title
  * @param {*} description
- */ 
-function loadAcademicPosition(id,title,description) {
+ */
+function loadAcademicPosition(id, title, description) {
 	const academicPositionHTML = `
 		<div class="fbox-icon">
 			<i class="fa-solid fa-check"></i>
 		</div>
 		<div class="fbox-content">
-			<h3>`+title+`</h3>
-			<p class="op-08 mt-0">`+description+`</p>
+			<h3>`+ title + `</h3>
+			<p class="op-08 mt-0">`+ description + `</p>
 		</div>
 										`
 	// Inserta el HTML en la página con el id proporcionado
@@ -25,14 +25,14 @@ function loadAcademicPosition(id,title,description) {
  * @param {*} title
  * @param {*} description
  */
-function loadCourse(id,title,description) {
+function loadCourse(id, title, description) {
 	const courseHTML = `
 			<div class="fbox-icon">
 				<i class="fa-solid fa-check"></i>
 			</div>
 			<div class="fbox-content">
-				<h3>`+title+`</h3>
-				<p class="mt-0">`+description+`</p>
+				<h3>`+ title + `</h3>
+				<p class="mt-0">`+ description + `</p>
 			</div>
 		`
 	// Inserta el HTML en la página con el id proporcionado
@@ -50,26 +50,26 @@ function loadCourse(id,title,description) {
 	@param {*} link
 	@param {*} linkVideo
  */
-function loadConference(id,title,subTitle,description,date,image,link,linkVideo) {
+function loadConference(id, title, subTitle, description, date, image, link, linkVideo) {
 	const conferenceHTML = `
 	
 		<div class="card border-0  imagescale h-shadow-sm shadow-ts">
 			<div class="row g-0 align-items-center">
 				<div class="col-md-8 p-4">
 					<div class="card-body">
-						<h3 class="card-title">`+title+`</h3>
-						<h4 class="card-title">`+subTitle+`</h4>
+						<h3 class="card-title">`+ title + `</h3>
+						<h4 class="card-title">`+ subTitle + `</h4>
 						<p class="card-text mb-2">
-							`+description+`
+							`+ description + `
 						</p>
-						<p class="card-text"><small class="text-muted">`+date+`</small>
+						<p class="card-text"><small class="text-muted">`+ date + `</small>
 						</p>`+
-						((link != "") ? `<a href="`+link+`" class="btn btn-primary">Ver</a>` : ``)+` `+
-						((linkVideo != "") ? `<a href="`+linkVideo+`" class="btn btn-primary">Vídeo</a>` : ``)+
-					`</div>
+		((link != "") ? `<a href="` + link + `" class="btn btn-primary">Ver</a>` : ``) + ` ` +
+		((linkVideo != "") ? `<a href="` + linkVideo + `" class="btn btn-primary">Vídeo</a>` : ``) +
+		`</div>
 				</div>
 				<div class="col-md-4 d-flex align-self-stretch overflow-hidden">
-					<img src="`+image+`" class="rounded-end" alt="...">
+					<img src="`+ image + `" class="rounded-end" alt="...">
 				</div>
 			</div>
 		</div>
@@ -89,22 +89,22 @@ function loadConference(id,title,subTitle,description,date,image,link,linkVideo)
 * @param {*} link enlace de la conferencia
 * @param {*} linkVideo enlace del video de la conferencia
 */
-function loadConferenceD(id,title,subTitle,description,date,image,link,linkVideo) {
+function loadConferenceD(id, title, subTitle, description, date, image, link, linkVideo) {
 	const conferenceHTML = `
 		<div class="card border-0 bg-dark dark imagescale h-shadow-sm shadow-ts">
 			<div class="row g-0 align-items-center">
 				<div class="col-md-4 d-flex align-self-stretch overflow-hidden">
-					<img src="`+image+`" class="rounded-start" alt="...">
+					<img src="`+ image + `" class="rounded-start" alt="...">
 				</div>
 				<div class="col-md-8 p-4">
 					<div class="card-body">
-						<h3 class="card-title">`+title+`</h3>
-						<h4 class="card-title">`+subTitle+`</h4>
-						<p class="card-text mb-2">`+description+`</p>
-						<p class="card-text"><small class="text-muted">`+date+`</small></p>`+
-						((link != "") ? `<a href="`+link+`" class="btn btn-primary">Ver</a>` : ``)+` `+
-						((linkVideo != "") ? `<a href="`+linkVideo+`" class="btn btn-primary">Vídeo</a>` : ``)+
-					`</div>
+						<h3 class="card-title">`+ title + `</h3>
+						<h4 class="card-title">`+ subTitle + `</h4>
+						<p class="card-text mb-2">`+ description + `</p>
+						<p class="card-text"><small class="text-muted">`+ date + `</small></p>` +
+		((link != "") ? `<a href="` + link + `" class="btn btn-primary">Ver</a>` : ``) + ` ` +
+		((linkVideo != "") ? `<a href="` + linkVideo + `" class="btn btn-primary">Vídeo</a>` : ``) +
+		`</div>
 				</div>
 			</div>
 		</div>
@@ -124,7 +124,7 @@ function loadConferenceD(id,title,subTitle,description,date,image,link,linkVideo
 
 /**
  * Utilidad para cargar los pies y cabeceras en todas las páginas
- */						
+ */
 function loadHeaderFooter() {
 	const topBarHTML = `
 	  <div class="container-fluid px-5">
@@ -216,8 +216,8 @@ function loadHeaderFooter() {
 			}
 	  </script>
 	  `
-	  // Genera el HTML del header y footer dinámicamente
-	  const headerHTML = ` 		<div id="header-wrap">
+	// Genera el HTML del header y footer dinámicamente
+	const headerHTML = ` 		<div id="header-wrap">
 			  <div class="container">
 				  <div class="header-row">
   
@@ -329,7 +329,7 @@ function loadHeaderFooter() {
   
 		  
 	  `;
-	  const footerHTML = `
+	const footerHTML = `
 	   <div class="container">
   
   
@@ -382,14 +382,12 @@ function loadHeaderFooter() {
 			  </div>
   
 	  `;
-	   // Inserta el HTML en la página
-	   document.getElementById('top-bar').innerHTML = topBarHTML;
-	   document.getElementById('header').innerHTML = headerHTML;
-	   document.getElementById('footer').innerHTML = footerHTML;
-	   //Agrega codigo del formulario de contacto.
-	   handleContactForm(); // si no está el elemento template-contactform no hace nada
+	// Inserta el HTML en la página
+	document.getElementById('top-bar').innerHTML = topBarHTML;
+	document.getElementById('header').innerHTML = headerHTML;
+	document.getElementById('footer').innerHTML = footerHTML;
 
-  }
+}
 /**
  * Utilidad para cargar entradas en la tabla de prensa usadas en publicaciones.html
  * 
@@ -398,13 +396,13 @@ function loadHeaderFooter() {
  * @param {*} date 
  * @param {*} title 
  */
-function loadPress(id,url,date,title) {
+function loadPress(id, url, date, title) {
 	const pressHTML = `
 		
 			<td>
-				<code>`+date+`</code>
+				<code>`+ date + `</code>
 			</td>
-			<td><a href="`+url+`">`+title+`</a></td>
+			<td><a href="`+ url + `">` + title + `</a></td>
 		
 	`
 	// Inserta el HTML en la página con el id proporcionado
@@ -424,21 +422,21 @@ function loadPress(id,url,date,title) {
  * @param {*} title título del proyecto
  * @param {*} description descripción del proyecto
  */
-function loadProjectSummary(id,url,image,imageFull,title,description) {
-	  const projectSummaryHTML = `
+function loadProjectSummary(id, url, image, imageFull, title, description) {
+	const projectSummaryHTML = `
 	                        <div class="grid-inner">
                                 <div class="portfolio-image">
-                                    <a href="`+url+`">
-                                        <img src="`+image+`" alt="`+title+`">
+                                    <a href="`+ url + `">
+                                        <img src="`+ image + `" alt="` + title + `">
                                     </a>
                                     <div class="bg-overlay">
                                         <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-                                            <a href="`+imageFull+`"
+                                            <a href="`+ imageFull + `"
                                                 class="overlay-trigger-icon bg-light text-dark"
                                                 data-hover-animate="fadeInDownSmall"
                                                 data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"
                                                 data-lightbox="image" title="Image"><i class="uil uil-plus"></i></a>
-                                            <a href="`+url+`"
+                                            <a href="`+ url + `"
                                                 class="overlay-trigger-icon bg-light text-dark"
                                                 data-hover-animate="fadeInDownSmall"
                                                 data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
@@ -448,8 +446,8 @@ function loadProjectSummary(id,url,image,imageFull,title,description) {
                                     </div>
                                 </div>
                                 <div class="portfolio-desc">
-                                    <h3><a href="`+url+`">`+title+`</a></h3>
-                                    <span>`+description+`</span>
+                                    <h3><a href="`+ url + `">` + title + `</a></h3>
+                                    <span>`+ description + `</span>
                                 </div>
                             </div>`
 	// Inserta el HTML en la página con el id proporcionado
@@ -457,19 +455,19 @@ function loadProjectSummary(id,url,image,imageFull,title,description) {
 }
 
 // Funcion similar a proyectSummary pero para cargar proyectos en index.html
-function loadProjectSummaryIndex(id,url,image,imageFull,title,description) {
+function loadProjectSummaryIndex(id, url, image, imageFull, title, description) {
 	const projectSummaryHTML = `
 		<div class="portfolio-item">
 			<div class="portfolio-image">
-				<a href="`+url+`">
-					<img src="`+image+`" alt="`+title+`">
+				<a href="`+ url + `">
+					<img src="`+ image + `" alt="` + title + `">
 				</a>
 				<div class="bg-overlay">
 					<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-						<a href="`+imageFull+`" class="overlay-trigger-icon bg-light text-dark"
+						<a href="`+ imageFull + `" class="overlay-trigger-icon bg-light text-dark"
 							data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall"
 							data-hover-speed="350" data-lightbox="image"><i class="uil uil-plus"></i></a>
-						<a href="`+url+`" class="overlay-trigger-icon bg-light text-dark"
+						<a href="`+ url + `" class="overlay-trigger-icon bg-light text-dark"
 							data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall"
 							data-hover-speed="350"><i class="uil uil-ellipsis-h"></i></a>
 					</div>
@@ -477,8 +475,8 @@ function loadProjectSummaryIndex(id,url,image,imageFull,title,description) {
 				</div>
 			</div>
 			<div class="portfolio-desc">
-				<h3><a href="`+url+`">`+title+`</a></h3>
-				<span>`+description+`</span>
+				<h3><a href="`+ url + `">` + title + `</a></h3>
+				<span>`+ description + `</span>
 			</div>
 		</div>`;
 	document.getElementById(id).innerHTML = projectSummaryHTML;
@@ -495,23 +493,23 @@ function loadProjectSummaryIndex(id,url,image,imageFull,title,description) {
  * @param {*} description descripción del video
  * 
  */
-function loadVideo(id,videoUrl,videoUrlList,posterUrl,title,description) {
+function loadVideo(id, videoUrl, videoUrlList, posterUrl, title, description) {
 	const videoHTML = `
 							<div class="portfolio-item">
 								<div class="portfolio-image">
-									<a href="`+videoUrlList+`">
-										<img src="`+posterUrl+`" alt="`+title+`">
+									<a href="`+ videoUrlList + `">
+										<img src="`+ posterUrl + `" alt="` + title + `">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="`+videoUrl+`" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="iframe"><i class="uil uil-play"></i></a>
-											<a href="`+videoUrlList+`" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="uil uil-ellipsis-h"></i></a>
+											<a href="`+ videoUrl + `" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-lightbox="iframe"><i class="uil uil-play"></i></a>
+											<a href="`+ videoUrlList + `" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="uil uil-ellipsis-h"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
 								</div>
 								<div class="portfolio-desc">
-									<h3><a href="`+videoUrl+`">`+description+`</a></h3>
+									<h3><a href="`+ videoUrl + `">` + description + `</a></h3>
 									
 								</div>
 							</div>
@@ -525,53 +523,209 @@ function loadVideo(id,videoUrl,videoUrlList,posterUrl,title,description) {
  * y muestra un mensaje de éxito. (Versión con estructura IF)
  */
 function handleContactForm() {
-    // 1. Busca el formulario en la página actual.
-    const form = document.getElementById("template-contactform");
+	// 1. Busca el formulario en la página actual.
+	const form = document.getElementById("template-contactform");
 
-    // 2. Comprueba si el formulario existe en la página.
-    if (form) {
-        // 3. Si existe, toda la lógica de gestión del formulario se ejecuta aquí dentro.
-        
-        async function handleSubmit(event) {
-            // Prevenimos el comportamiento por defecto del formulario
-            event.preventDefault();
-            
-            const status = document.getElementById("contact-form-success");
-            const data = new FormData(event.target);
+	// 2. Comprueba si el formulario existe en la página.
+	if (form) {
+		// 3. Si existe, toda la lógica de gestión del formulario se ejecuta aquí dentro.
 
-            // Usamos fetch para enviar los datos a Formspree en segundo plano
-            fetch(event.target.action, {
-                method: form.method,
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(response => {
-                if (response.ok) {
-                    // Mostramos nuestro mensaje de éxito y ocultamos el formulario
-                    status.style.display = 'block';
-                    form.style.display = 'none';
-                } else {
-                    // Si Formspree da un error, lo mostramos para depurar
-                    response.json().then(data => {
-                        if (Object.hasOwn(data, 'errors')) {
-                            alert(data["errors"].map(error => error["message"]).join(", "));
-                        } else {
-                            alert("Oops! Hubo un problema al enviar tu formulario.");
-                        }
-                    })
-                }
-            }).catch(error => {
-                // Si hay un error de red
-                alert("Oops! Hubo un problema al enviar tu formulario.");
-            });
-        }
+		async function handleSubmit(event) {
+			// Prevenimos el comportamiento por defecto del formulario
+			event.preventDefault();
 
-        // Añadimos el 'escuchador' de eventos que activará nuestra función
-        form.addEventListener("submit", handleSubmit);
-    
-    } 
-    // Si el formulario no existe (estamos en otra página), la condición 'if' no se cumple
-    // y la función simplemente termina sin hacer nada y sin errores.
+			const status = document.getElementById("contact-form-success");
+			const data = new FormData(event.target);
+
+			// Usamos fetch para enviar los datos a Formspree en segundo plano
+			fetch(event.target.action, {
+				method: form.method,
+				body: data,
+				headers: {
+					'Accept': 'application/json'
+				}
+			}).then(response => {
+				if (response.ok) {
+					// Mostramos nuestro mensaje de éxito y ocultamos el formulario
+					status.style.display = 'block';
+					form.style.display = 'none';
+				} else {
+					// Si Formspree da un error, lo mostramos para depurar
+					response.json().then(data => {
+						if (Object.hasOwn(data, 'errors')) {
+							alert(data["errors"].map(error => error["message"]).join(", "));
+						} else {
+							alert("Oops! Hubo un problema al enviar tu formulario.");
+						}
+					})
+				}
+			}).catch(error => {
+				// Si hay un error de red
+				alert("Oops! Hubo un problema al enviar tu formulario.");
+			});
+		}
+
+		// Añadimos el 'escuchador' de eventos que activará nuestra función
+		form.addEventListener("submit", handleSubmit);
+
+	}
+	// Si el formulario no existe (estamos en otra página), la condición 'if' no se cumple
+	// y la función simplemente termina sin hacer nada y sin errores.
 }
-		
+
+/**
+ * Inicializa y gestiona toda la lógica del Chatbot de Victoria
+ */
+function initializeVictoriaChatbot() {
+	console.log("Inicializando Victoria Chatbot...");
+	// Busca los elementos del chat en la página. Si no están, no hace nada.
+	const chatButton = document.getElementById('victoria-chat-button');
+	const chatWindow = document.getElementById('victoria-chat-window');
+	const chatInput = document.getElementById('chat-input');
+	const chatSend = document.getElementById('chat-send');
+	const messagesContainer = document.getElementById('chat-messages');
+	const fullscreenButton = document.getElementById('chat-fullscreen-toggle');
+
+	if (!chatButton) {
+		console.warn("Botón de chat no encontrado. Asegúrate de que el HTML incluye el botón con id 'victoria-chat-button'.");
+		return;
+	}
+	console.log("Botón de chat encontrado. Preparando ventana de chat...");
+	let currentSessionId = null;
+
+	// Función para generar un ID de sesión único
+	function getSessionId() {
+		if (!currentSessionId) {
+			currentSessionId = `web_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+		}
+		return currentSessionId;
+	}
+
+	// Función para añadir un mensaje a la ventana de chat
+	function addMessage(text, sender) {
+		const messageDiv = document.createElement('div');
+		messageDiv.textContent = text;
+		messageDiv.style.padding = '8px 12px';
+		messageDiv.style.borderRadius = '18px';
+		messageDiv.style.marginBottom = '10px';
+		messageDiv.style.maxWidth = '80%';
+
+		if (sender === 'user') {
+			messageDiv.style.backgroundColor = '#0d6efd';
+			messageDiv.style.color = 'white';
+			messageDiv.style.alignSelf = 'flex-end';
+		} else {
+			messageDiv.style.backgroundColor = '#e9ecef';
+			messageDiv.style.color = 'black';
+			messageDiv.style.alignSelf = 'flex-start';
+		}
+		messagesContainer.appendChild(messageDiv);
+		messagesContainer.scrollTop = messagesContainer.scrollHeight; // Auto-scroll
+	}
+
+	// --- LA FUNCIÓN sendMessageToVictoria ---
+	// Esta es la función que llama a Firebase.
+	async function sendMessageToVictoria(prompt) {
+		if (!prompt || prompt.trim() === "") return;
+
+		addMessage(prompt, 'user');
+		chatInput.value = '';
+		chatInput.disabled = true;
+		chatSend.disabled = true;
+
+		// La URL de tu función que ya tienes
+		const functionUrl = 'https://chatwithvictoria-ff5653t6ka-uc.a.run.app';
+
+		// Preparamos los datos que vamos a enviar en el formato correcto
+		const requestBody = {
+			data: {
+				message: prompt,
+				// Aquí enviaríamos el historial si lo guardamos en el frontend
+				// history: botApp.chatHistory 
+			}
+		};
+
+		try {
+			// Hacemos la llamada directa a tu URL con fetch
+			const response = await fetch(functionUrl, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(requestBody)
+			});
+
+			if (!response.ok) {
+				throw new Error(`Error del servidor: ${response.statusText}`);
+			}
+
+			const result = await response.json();
+
+			// El resultado de una función de Firebase está dentro de result.result
+			const botResponse = result.result.reply || "He tenido un problema para responder.";
+
+			addMessage(botResponse, 'bot');
+
+			// Aquí actualizaríamos el historial si lo implementamos
+			// botApp.chatHistory.push({ role: 'user', parts: [{ text: prompt }] });
+			// botApp.chatHistory.push({ role: 'model', parts: [{ text: botResponse }] });
+
+		} catch (error) {
+			console.error("Error al llamar a la función de Victoria:", error);
+			addMessage("Lo siento, he tenido un problema técnico. Por favor, inténtalo de nuevo más tarde.", 'bot');
+		} finally {
+			chatInput.disabled = false;
+			chatSend.disabled = false;
+			chatInput.focus();
+		}
+	}
+
+	// Eventos para abrir/cerrar el chat y enviar mensajes
+	chatButton.addEventListener('click', () => {
+		chatWindow.classList.toggle('is-hidden');
+	});
+
+	chatSend.addEventListener('click', () => {
+		sendMessageToVictoria(chatInput.value.trim());
+	});
+
+	chatInput.addEventListener('keypress', (e) => {
+		if (e.key === 'Enter') {
+			sendMessageToVictoria(chatInput.value.trim());
+		}
+	});
+	fullscreenButton.addEventListener('click', () => {
+		chatWindow.classList.toggle('fullscreen');
+
+		// Cambiamos el 'title' para accesibilidad
+		if (chatWindow.classList.contains('fullscreen')) {
+			fullscreenButton.setAttribute('title', 'Restaurar ventana');
+		} else {
+			fullscreenButton.setAttribute('title', 'Maximizar');
+		}
+	});
+}
+
+/**
+ * =================================================================
+ * PUNTO DE ENTRADA PRINCIPAL DE LA APLICACIÓN
+ * Este código espera a que todo el HTML de la página esté cargado
+ * y listo antes de ejecutar nuestras funciones.
+ * =================================================================
+ */
+document.addEventListener('DOMContentLoaded', function () {
+	console.log("Página cargada y lista. Ejecutando funciones...");
+
+	// 1. Carga los elementos comunes como el header y el footer.
+	loadHeaderFooter();
+
+	// 2. Prepara la lógica para el formulario de contacto (si existe en la página).
+	handleContactForm();
+
+	// 3. Prepara la lógica para el chatbot (si existe en la página).
+	initializeVictoriaChatbot();
+
+	// 4. Si en el futuro necesitas otra función que se ejecute en todas las páginas,
+	// simplemente la añades aquí.
+
+});
