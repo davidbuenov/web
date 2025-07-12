@@ -59,9 +59,9 @@
 	============================================= -->
     <div id="wrapper">
      
-        <div id="top-bar"></div>
+        <div id="top-bar">{% include top-bar.html %}</div>
         <header id="header" class="full-header transparent-header semi-transparent" data-sticky-class="not-dark">
-            <div id="header-wrap">	</div>
+            {% include header.html %}
         </header>
   
         <!-- Contenido principal de cada página -->
@@ -69,7 +69,7 @@
 
         <!-- Footer
 		============================================= -->
-        <footer id="footer" class="dark"></footer>
+        <footer id="footer" class="dark">{% include footer.html %}</footer>
 
     </div><!-- #wrapper end -->
 
@@ -82,9 +82,9 @@
 	<!-- JavaScripts Principales
 	============================================= -->
     <!-- Scripts generales de la web (cargados desde dbv.js) -->
-	<script src="/js/dbv.js" onload="loadHeaderFooter()"></script>
-    <script src="/js/plugins.min.js" defer></script>
-    <script src="/js/functions.bundle.js" defer></script>
+	<script src="/js/plugins.min.js" defer></script>
+     <script src="/js/functions.bundle.js" defer ></script>
+    <script src="/js/dbv.js" ></script>
     
     <!-- Scripts específicos de cada página (inyectados por Jekyll) -->
     {% if page.page_scripts %}

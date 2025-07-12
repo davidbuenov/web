@@ -713,19 +713,28 @@ function initializeVictoriaChatbot() {
  * y listo antes de ejecutar nuestras funciones.
  * =================================================================
  */
-document.addEventListener('DOMContentLoaded', function () {
-	console.log("Página cargada y lista. Ejecutando funciones...");
+/**
+ * =================================================================
+ * PUNTO DE ENTRADA PRINCIPAL DE LA APLICACIÓN
+ * Usamos window.onload para asegurarnos de que TODOS los scripts,
+ * incluido el functions.bundle.js de la plantilla, se hayan cargado.
+ * =================================================================
+ */
+window.onload = function() {
 
-	// 1. Carga los elementos comunes como el header y el footer.
-	loadHeaderFooter();
+    // 1. Carga nuestros elementos comunes como el header y el footer.
+    loadHeaderFooter();
 
-	// 2. Prepara la lógica para el formulario de contacto (si existe en la página).
-	handleContactForm();
+    // 2. Prepara nuestra lógica para el formulario de contacto.
+    handleContactForm();
 
-	// 3. Prepara la lógica para el chatbot (si existe en la página).
-	initializeVictoriaChatbot();
+    // 3. Prepara nuestra lógica para el chatbot.
+    initializeVictoriaChatbot();
 
-	// 4. Si en el futuro necesitas otra función que se ejecute en todas las páginas,
-	// simplemente la añades aquí.
-
-});
+    // 4. INICIALIZA LOS COMPONENTES DE CANVAS
+    // Ahora que estamos seguros de que functions.bundle.js se ha cargado, 
+    // el objeto SEMICOLON existirá y podemos llamarlo sin error.
+    if (typeof SEMICOLON !== 'undefined') {
+        SEMICOLON.Modules.init();
+    }
+};
