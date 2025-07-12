@@ -15,3 +15,49 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Opcional: añade una sombra suave */
 }
 
+/* --- ESTILOS PARA EL CHATBOT VICTORIA 2.0 --- */
+
+/* Contenedor principal del widget flotante */
+.chatbot-wrapper {
+    position: fixed;
+    bottom: 25px;
+    right: 50px;
+    z-index: 1000;
+}
+
+/* El botón circular que abre el chat */
+.chatbot-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+ 
+}
+
+.chatbot-trigger:hover {
+    transform: scale(1.1);
+    color: #FFFFFF;
+}
+
+/* La ventana del chat */
+.chatbot-container {
+    position: absolute;
+    bottom: 80px; /* 20px por encima del botón */
+    right: 0;
+    width: 350px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform-origin: bottom right;
+}
+
+/* Clase para ocultar/mostrar la ventana del chat con una animación suave */
+.chatbot-container.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.95) translateY(10px);
+

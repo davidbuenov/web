@@ -123,7 +123,9 @@
     <!-- The Main Wrapper
 	============================================= -->
     <div id="wrapper">
+     
         <div id="top-bar"></div>
+  
         <!-- Macador header-->
            <header id="header" class="full-header transparent-header" data-sticky-class="not-dark" data-mobile-sticky="true">
 			<div id="header-wrap">	</div>
@@ -407,6 +409,27 @@
             <div class="grid-inner">
                 
                 <div class="entry-image">
+                    <a href="/2025/07/09/victoria-ha-vuelto-la-metamorfosis-de-mi-web.html"><img src="/images/dbv/diagrama-chatbot.gif" alt="Victoria ha vuelto: La Metamorfosis de una Web Personal"></a>
+                </div>
+                
+                <div class="entry-title title-sm">
+                    <h3><a href="/2025/07/09/victoria-ha-vuelto-la-metamorfosis-de-mi-web.html">Victoria ha vuelto: La Metamorfosis de una Web Personal</a></h3>
+                </div>
+                <div class="entry-meta">
+                    <ul>
+                        <li><i class="uil uil-schedule"></i> 09 de July, 2025</li>
+                    </ul>
+                </div>
+                <div class="entry-content">
+                    <p>En los últimos días, mi web ha vivido una profunda transformación. No ha sido un simple rediseño, sino una cambio estratégico. Y en el centro de todo, ella ha vuelto: Victoria, mi asistente de IA, ahora más potente que nunca.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="entry col-md-4">
+            <div class="grid-inner">
+                
+                <div class="entry-image">
                     <a href="/2025/07/07/mi-primer-articulo.html"><img src="/images/dbv/blog/blog.webp" alt="Migrando el blog..."></a>
                 </div>
                 
@@ -464,8 +487,6 @@
 
 
 
-
-
         <!-- Footer
 		============================================= -->
         <footer id="footer" class="dark"></footer>
@@ -499,7 +520,103 @@
 
     <script src="/js/functions.bundle.js" defer></script>
 
-  
+<!-- =================================================================
+    INICIO DEL CHATBOT VICTORIA 2.0 (VERSIÓN WIDGET FLOTANTE)
+================================================================== -->
+<!-- 1. Estilos de BotUI -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui-theme-default.css" />
+
+<!-- 2. Contenedor Principal del Widget -->
+<div class="chatbot-wrapper">
+    <!-- El contenedor del chat, inicialmente oculto -->
+    <div id="victoria-chatbot-container" class="chatbot-container is-hidden">
+        <bot-ui></bot-ui>
+    </div>
+
+    <!-- El botón que abre el chat -->
+    <a href="#" id="chatbot-trigger" class="chatbot-trigger">
+        <img src="/images/dbv/victoria-chat.webp" alt="Abrir chat con Victoria">
+        <!--<i class="uil uil-comments-alt"></i>-->
+    </a>
+</div>
+
+<!-- 3. Librerías (Vue y BotUI) -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/botui/build/botui.min.js"></script>
+
+<!-- 4. Lógica de Inicialización y Control (VERSIÓN FINAL CON MEMORIA) -->
+<script>
+    var botApp = new Vue({
+        el: '#victoria-chatbot-container',
+        data: {
+            botui: null,
+            // AQUÍ GUARDAMOS LA MEMORIA DE VICTORIA
+            chatHistory: [] 
+        },
+        mounted: function () {
+            this.botui = new BotUI(this.$el.id, { vue: Vue });
+            this.iniciarConversacion();
+        },
+        methods: {
+            iniciarConversacion: function () {
+                this.botui.message.add({
+                    delay: 800,
+                    content: '¡Hola! Soy Victoria, la asistente de IA de David. ¿Hablamos?'
+                }).then(() => {
+                    this.esperarRespuestaUsuario();
+                });
+            },
+            llamarVictoria: function(userMessage) {
+                var botui = this.botui;
+                botui.message.add({ delay: 500, loading: true }).then(index => {
+                    const functionUrl = 'https://chatwithvictoria-ff5653t6ka-uc.a.run.app'; // TU URL
+
+                    // Enviamos el mensaje Y el historial
+                    fetch(functionUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ data: { message: userMessage, history: this.chatHistory } })
+                    })
+                    .then(response => response.json())
+                    .then(result => {
+                        const data = result.result;
+                        const reply = data.reply || data.error || "He tenido un problema para responder.";
+                        
+                        // Actualizamos el mensaje de "escribiendo..."
+                        botui.message.update(index, { content: reply });
+
+                        // ¡ACTUALIZAMOS LA MEMORIA!
+                        this.chatHistory.push({ role: 'user', parts: [{ text: userMessage }] });
+                        this.chatHistory.push({ role: 'model', parts: [{ text: reply }] });
+
+                        // Volvemos a esperar la respuesta
+                        this.esperarRespuestaUsuario();
+                    });
+                });
+            },
+            esperarRespuestaUsuario: function () {
+                var botui = this.botui;
+                botui.action.text({
+                    autoHide: false,
+                    action: { placeholder: 'Escribe tu pregunta...' }
+                }).then(res => {
+                   
+                    // Llamamos a la función que contacta con la IA
+                    this.llamarVictoria(res.value);
+                });
+            }
+        }
+    });
+
+    const chatbotTrigger = document.getElementById('chatbot-trigger');
+    const chatbotContainer = document.getElementById('victoria-chatbot-container');
+    chatbotTrigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        chatbotContainer.classList.toggle('is-hidden');
+    });
+</script>
+<!-- FIN DEL CÓDIGO DEL CHATBOT -->
 </body>
 
 </html>
