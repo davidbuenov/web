@@ -114,15 +114,6 @@ function loadConferenceD(id, title, subTitle, description, date, image, link, li
 }
 
 
-
-
-
-
-
-
-
-
-
 /**
  * Utilidad para cargar entradas en la tabla de prensa usadas en publicaciones.html
  * 
@@ -443,12 +434,26 @@ function initializeVictoriaChatbot() {
 
 /**
  * =================================================================
- * PUNTO DE ENTRADA PARA NUESTRO CÓDIGO PERSONALIZADO
+ * PUNTO DE ENTRADA PRINCIPAL DE LA APLICACIÓN
+ * Este código espera a que todo el HTML de la página esté cargado
+ * y listo antes de ejecutar nuestras funciones.
  * =================================================================
  */
-document.addEventListener('DOMContentLoaded', function() {
-    // Ejecutamos nuestras funciones aquí, después de que el HTML esté listo.
-   
+/**
+ * =================================================================
+ * PUNTO DE ENTRADA PRINCIPAL DE LA APLICACIÓN
+ * Usamos window.onload para asegurarnos de que TODOS los scripts,
+ * incluido el functions.bundle.js de la plantilla, se hayan cargado.
+ * =================================================================
+ */
+window.onload = function() {
+
+
+    // 2. Prepara nuestra lógica para el formulario de contacto.
     handleContactForm();
+
+    // 3. Prepara nuestra lógica para el chatbot.
     initializeVictoriaChatbot();
-});
+
+   
+};
