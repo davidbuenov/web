@@ -69,7 +69,35 @@
     flex-direction: column;
     gap: 10px;
 }
-/* ... (el resto de estilos de mensajes se quedan igual) ... */
+/* Estilo base para todas las burbujas de mensaje */
+.chatbot-messages .message-bubble {
+    padding: 10px 18px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    max-width: 85%;
+    line-height: 1.5;
+    word-wrap: break-word; /* Asegura que las palabras largas no rompan el diseño */
+}
+
+/* Burbuja para los mensajes del usuario */
+.chatbot-messages .user-message {
+    background-color: #0d6efd;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Burbuja para los mensajes del bot */
+.chatbot-messages .bot-message {
+    background-color: #e9ecef;
+    color: #333;
+    align-self: flex-start;
+}
+
+/* Estilo para los enlaces dentro de los mensajes del bot */
+.chatbot-messages .bot-message a {
+    color: #0d6efd;
+    text-decoration: underline;
+}
 
 /* --- 5. Estilo para el nuevo botón-avatar --- */
 .chatbot-avatar-trigger {
@@ -153,4 +181,25 @@
     line-height: 1;
     /* Pequeño ajuste para centrar el icono del avión visualmente */
     margin-left: 2px; 
+}
+
+/* =================================================================
+   ESTILOS PARA IMÁGENES DE TARJETAS (EVITAR DISTORSIÓN)
+==================================================================== */
+
+.card-image-container {
+    /* Le damos una altura fija al contenedor para que todas las imágenes tengan el mismo marco */
+    min-height: 250px; 
+}
+
+.card-image-container img {
+    /* Hacemos que la imagen intente ocupar todo el contenedor */
+    width: 100%;
+    height: 100%;
+
+    /* ¡LA MAGIA! Mantiene la proporción y recorta lo que sobre */
+    object-fit: cover; 
+    
+    /* Opcional: Centra la imagen dentro del marco */
+    object-position: center center; 
 }

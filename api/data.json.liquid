@@ -1,0 +1,32 @@
+---
+permalink: /api/data.json
+---
+{
+  "proyectos": [
+    {% for project in site.projects %}
+      {
+        "title": {{ project.title | jsonify }},
+        "url": {{ project.url | relative_url | jsonify }},
+        "excerpt": {{ project.excerpt | strip_html | jsonify }},
+        "creators": {{ project.creators | jsonify }},
+        "year": {{ project.year | jsonify }},
+        "tech": {{ project.tech | jsonify }},
+        "content": {{ project.content | strip_html | normalize_whitespace | jsonify }}
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "conferencias": [
+    {% for conference in site.conferencias %}
+      {
+        "title": {{ conference.title | jsonify }},
+        "subtitle": {{ conference.subtitle | jsonify }},
+        "description": {{ conference.description | strip_html | jsonify }},
+        "date": {{ conference.date | jsonify }},
+        "url": {{ conference.link | jsonify }},
+        "video_url": {{ conference.link_video | jsonify }}
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}

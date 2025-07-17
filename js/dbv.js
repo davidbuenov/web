@@ -318,6 +318,9 @@ function initializeVictoriaChatbot() {
 	}
 	console.log("Botón de chat encontrado. Preparando ventana de chat...");
 	let currentSessionId = null;
+	// --- ¡AQUÍ ESTÁ LA MEMORIA! ---
+	// Un array que guardará el historial de la conversación actual.
+	let chatHistory = [];
 
 	// Función para generar un ID de sesión único
 	function getSessionId() {
@@ -330,20 +333,12 @@ function initializeVictoriaChatbot() {
 	// Función para añadir un mensaje a la ventana de chat
 	function addMessage(text, sender) {
 		const messageDiv = document.createElement('div');
-		messageDiv.textContent = text;
-		messageDiv.style.padding = '8px 12px';
-		messageDiv.style.borderRadius = '18px';
-		messageDiv.style.marginBottom = '10px';
-		messageDiv.style.maxWidth = '80%';
-
+		messageDiv.innerHTML = text;
+		messageDiv.classList.add('message-bubble'); // Clase base para todos los mensajes
 		if (sender === 'user') {
-			messageDiv.style.backgroundColor = '#0d6efd';
-			messageDiv.style.color = 'white';
-			messageDiv.style.alignSelf = 'flex-end';
+			messageDiv.classList.add('user-message');
 		} else {
-			messageDiv.style.backgroundColor = '#e9ecef';
-			messageDiv.style.color = 'black';
-			messageDiv.style.alignSelf = 'flex-start';
+			messageDiv.classList.add('bot-message');
 		}
 		messagesContainer.appendChild(messageDiv);
 		messagesContainer.scrollTop = messagesContainer.scrollHeight; // Auto-scroll
@@ -360,15 +355,14 @@ function initializeVictoriaChatbot() {
 		chatSend.disabled = true;
 
 		// La URL de tu función que ya tienes
-		const functionUrl = 'https://chatwithvictoria-ff5653t6ka-uc.a.run.app';
-
+		const functionUrl = 'https://api-ff5653t6ka-uc.a.run.app/askVictoria';
+		//const functionUrl = 'http://127.0.0.1:5001/davidbuenov-d136c/us-central1/api/askVictoria';
 		// Preparamos los datos que vamos a enviar en el formato correcto
 		const requestBody = {
-			data: {
-				message: prompt,
-				// Aquí enviaríamos el historial si lo guardamos en el frontend
-				// history: botApp.chatHistory 
-			}
+
+			message: prompt,
+			history: chatHistory
+
 		};
 
 		try {
@@ -386,15 +380,15 @@ function initializeVictoriaChatbot() {
 			}
 
 			const result = await response.json();
-
+			console.log("Respuesta de Victoria:", result);
 			// El resultado de una función de Firebase está dentro de result.result
-			const botResponse = result.result.reply || "He tenido un problema para responder.";
+			const botResponse = result.reply || "He tenido un problema para responder.";
 
 			addMessage(botResponse, 'bot');
 
-			// Aquí actualizaríamos el historial si lo implementamos
-			// botApp.chatHistory.push({ role: 'user', parts: [{ text: prompt }] });
-			// botApp.chatHistory.push({ role: 'model', parts: [{ text: botResponse }] });
+			// Aquí actualizaríamos el historial
+			chatHistory.push({ role: 'user', parts: [{ text: prompt }] });
+			chatHistory.push({ role: 'model', parts: [{ text: botResponse }] });
 
 		} catch (error) {
 			console.error("Error al llamar a la función de Victoria:", error);
@@ -446,14 +440,14 @@ function initializeVictoriaChatbot() {
  * incluido el functions.bundle.js de la plantilla, se hayan cargado.
  * =================================================================
  */
-window.onload = function() {
+window.onload = function () {
 
 
-    // 2. Prepara nuestra lógica para el formulario de contacto.
-    handleContactForm();
+	// 2. Prepara nuestra lógica para el formulario de contacto.
+	handleContactForm();
 
-    // 3. Prepara nuestra lógica para el chatbot.
-    initializeVictoriaChatbot();
+	// 3. Prepara nuestra lógica para el chatbot.
+	initializeVictoriaChatbot();
 
-   
+
 };

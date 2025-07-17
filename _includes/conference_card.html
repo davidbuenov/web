@@ -2,7 +2,7 @@
 {% if include.conf.dark_card %}
 <div class="card border-0 bg-dark dark imagescale h-shadow-sm shadow-ts">
     <div class="row g-0 align-items-center">
-        <div class="col-md-4 d-flex align-self-stretch overflow-hidden">
+        <div class="col-md-4 d-flex align-self-stretch overflow-hidden card-image-container">
             <img src="{{ include.conf.image | relative_url }}" class="rounded-start" alt="{{ include.conf.title }}">
         </div>
         <div class="col-md-8 p-4">
@@ -29,7 +29,7 @@
                 {% if include.conf.link_video and include.conf.link_video != "" %}<a href="{{ include.conf.link_video }}" class="btn btn-primary">Vídeo</a>{% endif %}
             </div>
         </div>
-        <div class="col-md-4 d-flex align-self-stretch overflow-hidden">
+        <div class="col-md-4 d-flex align-self-stretch overflow-hidden card-image-container">
             <img src="{{ include.conf.image | relative_url }}" class="rounded-end" alt="{{ include.conf.title }}">
         </div>
     </div>

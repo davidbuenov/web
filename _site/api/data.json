@@ -1,0 +1,207 @@
+{
+  "proyectos": [
+    
+      {
+        "title": "Patente: Sistema de Seguimiento y Análisis de Prácticas Deportivas",
+        "url": "/proyectos/patente-deportes/",
+        "excerpt": "Invención de un sistema pionero para la monitorización de deportistas en tiempo real, concedida por la OEPM y extendida internacionalmente.",
+        "creators": null,
+        "year": "2013 (Concesión)",
+        "tech": "Patentes, Innovación, GPS, Dispositivos Móviles, Monitorización",
+        "content": "El Reto: Reinventar el Seguimiento Deportivo en 2011 Mucho antes de que los wearables y las apps de fitness conectadas fueran omnipresentes, el seguimiento de deportistas era individual y limitado. La tecnología existente no ofrecía una solución integral para que un entrenador pudiera supervisar a un equipo en tiempo real, analizar su rendimiento y garantizar su seguridad. La Solución: Una Patente de Invención Visionaria Diseñé y desarrollé un \"Sistema para el seguimiento y análisis de prácticas deportivas\", una invención que conceptualizaba un ecosistema conectado completo: Arquitectura Multiplataforma: El sistema integraba un dispositivo móvil para cada atleta (con GPS y pulsómetro), un servidor central para procesar los datos, y una aplicación para el entrenador. Monitorización y Comunicación en Tiempo Real: Permitía al entrenador no solo ver parámetros como la posición, velocidad y ritmo cardíaco de todo el equipo a la vez, sino también comunicarse con ellos mediante mensajes de voz o texto para dar instrucciones. Foco en la Seguridad y la Accesibilidad: La invención fue diseñada pensando en la seguridad en deportes de riesgo (senderismo, esquí) y en facilitar la práctica deportiva a personas con discapacidad bajo supervisión. El Impacto: Innovación Reconocida y Propiedad Intelectual Este proyecto no fue solo teórico, sino una innovación fundamental reconocida oficialmente: 🏆 Patente Nacional Concedida (Nº 201100581): La Oficina Española de Patentes y Marcas reconoció la novedad y actividad inventiva del sistema en 2013. 🌍 Extensión Internacional (PCT): Dada su originalidad, la invención fue extendida internacionalmente, demostrando su potencial global. 🧠 Visión Pionera: El sistema conceptualizó las bases de los actuales ecosistemas de fitness conectado años antes de que se convirtieran en un estándar de la industria."
+      }
+      ,
+    
+      {
+        "title": "Victoria la Malagueña",
+        "url": "/proyectos/victoria-la-malaguena/",
+        "excerpt": "Chatbot pionero para el Asistente de Google y avatar 3D con Unreal Engine, premiado en FITUR como mejor chatbot de guía de destino.",
+        "creators": "David Bueno Vallejo",
+        "year": 2019,
+        "tech": "Dialogflow, NodeJS, Firebase, Unreal Engine, Open Data",
+        "content": "El Reto: Humanizar la Información En 2018, en pleno auge de los asistentes de voz, la interacción con la tecnología era todavía muy limitada. El reto era doble: por un lado, demostrar el potencial del portal de Datos Abiertos de Málaga y, por otro, crear una experiencia turística que fuera más allá de una simple respuesta, ofreciendo una interacción visual, memorable y genuinamente humana. Mi Aportación: Orquestando la Innovación Diseñé y desarrollé \"Victoria\", un proyecto pionero que no se limitó a conectar una API, sino que orquestó tres tecnologías de vanguardia: IA Conversacional (Dialogflow): Creé el \"cerebro\" de Victoria, un sistema capaz de entender el lenguaje natural y responder a cientos de preguntas sobre Málaga, utilizando entre otros los datos abiertos de la ciudad. Motor Gráfico 3D (Unreal Engine): La evolución fue el diseño y animación de un avatar 3D realista para dar vida a Victoria, dotándola de una personalidad visual única. Integración y Sincronización: En la evolución, desarrollé la conexión para que la conversación de la IA se tradujera en expresiones faciales y movimientos de labios sincronizados en tiempo real en el avatar 3D. El Impacto: Reconocimiento y Visibilidad Nacional El resultado fue un éxito rotundo, validando el proyecto no solo a nivel técnico, sino también a nivel de mercado e innovación: 🏆 Ganador del Premio \"The Chatbots Tourism Awards\" en FITUR 2019, el reconocimiento más importante para la innovación turística en España, otorgado por SEGITTUR. 🏅 Premio a la Mejor Buena Práctica TIC en las JOMCAL 2018. 🏅 Finalista en los prestigiosos Planeta Chatbot Awards. 📰 Amplia cobertura mediática que posicionó al proyecto como un referente de innovación en la administración pública."
+      }
+      ,
+    
+      {
+        "title": "DBV Combinar Correspondencia",
+        "url": "/proyectos/dbv-combinar-correspondencia/",
+        "excerpt": "Un complemento gratuito y de código abierto para Microsoft Word que automatiza la creación y envío masivo de documentos, nacido durante la pandemia y aclamado por usuarios de todo el mundo.",
+        "creators": "David Bueno Vallejo",
+        "year": "2020-2022",
+        "tech": "Visual Basic para Aplicaciones (VBA), Microsoft Word",
+        "content": "El Reto: Una Necesidad Urgente en un Momento Crítico Durante la pandemia de 2020, surgió una necesidad urgente y masiva: generar miles de certificados de movilidad personalizados para trabajadores. La herramienta estándar de \"Combinar Correspondencia\" de Microsoft Word era lenta, rígida y no permitía funcionalidades avanzadas como el envío por email o la protección con contraseña de forma masiva. La Solución: De un Tutorial a un Complemento Robusto En lugar de una solución temporal, decidí crear un complemento gratuito y de código abierto para Word que automatizara todo el proceso. Lo que empezó como una serie de vídeos de ayuda en YouTube, evolucionó a un completo Add-In que va mucho más allá de la funcionalidad nativa: Automatización Total: Genera documentos en PDF o Word, los protege con contraseña y los envía por correo electrónico en un solo clic. Flexibilidad Avanzada: Permite adjuntar archivos adicionales a cada correo, personalizar el nombre del archivo y programar los envíos. Firma Electrónica: Incluye la capacidad de insertar una firma electrónica en los documentos generados. Desarrollado íntegramente en VBA (Visual Basic para Aplicaciones), este proyecto demuestra cómo se puede extender y potenciar herramientas ofimáticas tradicionales para resolver problemas complejos del mundo real. El Impacto: Una Herramienta Global Aclamada por los Usuarios El complemento, publicado en GitHub, ha tenido una acogida espectacular, siendo una prueba del valor real que aporta: ✅ Descargado y utilizado por empresas y profesionales en todo el mundo, desde España hasta América Latina y Estados Unidos. 🗣️ Decenas de testimonios positivos que confirman el ahorro de \"incontables horas de trabajo\". 🌍 Un ejemplo de cómo un proyecto personal, nacido de una necesidad real, puede escalar y tener un impacto global."
+      }
+      ,
+    
+      {
+        "title": "EVUMAX: Entornos Virtuales Maxi-Realistas",
+        "url": "/proyectos/evumax/",
+        "excerpt": "Proyecto ganador del Premio Spin-Off de la UMA 2021, que fusiona arte hiperrealista y avatares 3D para crear experiencias virtuales inmersivas.",
+        "creators": "David Bueno Vallejo y Francisco Trigueros",
+        "year": "2019-2021",
+        "tech": "Unreal Engine, Metahuman, Character Creator, iClone, ReadSpeaker",
+        "content": "El Reto: Trascender la Galería Virtual El desafío era crear museos, galerías de arte y desfiles de moda virtuales que no se sintieran como un simple recorrido 360 o un videojuego, sino como una experiencia artística premium. ¿Cómo podíamos generar una conexión emocional y ofrecer un nivel de realismo que honrara las obras y los diseños presentados? El objetivo era construir un entorno virtual maxi-realista. Nuestra Solución: La Fusión de Arte y Tecnología de Vanguardia En colaboración con el pintor hiperrealista y diseñador 3D Francisco Trigueros, desarrollamos EVUMAX, un proyecto que integra múltiples tecnologías avanzadas para lograr una inmersión sin precedentes: Integración Humana-Virtual: Utilizamos técnicas avanzadas de croma para filmar modelos y ponentes reales e integrarlos de forma fluida dentro de los entornos virtuales creados con Unreal Engine. Avatares 3D Expresivos: Dimos vida a Metahumans (avatares 3D ultra-realistas) con capacidad de habla, gracias a la tecnología de Text-to-Speech de ReadSpeaker y un análisis de visemas para sincronizar perfectamente el movimiento de los labios con el audio. Diseño de Entornos Espectaculares: Francisco Trigueros diseñó espacios virtuales únicos que sirven como el lienzo perfecto para desfiles de moda, exposiciones de arte o eventos corporativos. El Impacto: Premio a la Innovación y una Nueva Vía de Investigación EVUMAX no solo cumplió sus objetivos, sino que fue reconocido por su potencial disruptivo: 🏆 Ganador del prestigioso Premio Spin-Off 2021 de la Universidad de Málaga, que reconoce los proyectos empresariales más innovadores nacidos en el entorno universitario. 🔬 Creación de una nueva línea de investigación en la UMA centrada en Realidad Virtual, Metaverso y Avatares 3D, de la cual soy responsable. 🚀 Consolidación como empresa: El proyecto continúa su andadura comercial de la mano de Francisco Trigueros en evumax.com, demostrando su viabilidad en el mercado."
+      }
+      ,
+    
+      {
+        "title": "IAMIS: IA para la Inclusión Social",
+        "url": "/proyectos/iamis-betania/",
+        "excerpt": "Dirección técnica de una plataforma pionera para la gestión de intervenciones sociales con Nuevo Hogar Betania.",
+        "creators": null,
+        "year": 2024,
+        "tech": "Inteligencia Artificial, Gestión de Proyectos, Aplicaciones a Medida",
+        "content": "El Reto: Optimizar la Intervención Social con Recursos Limitados La asociación Nuevo Hogar Betania realiza una labor encomiable atendiendo a personas en riesgo de exclusión social. Sin embargo, se enfrentaban a un desafío operativo enorme: gestionar de forma eficiente y personalizada cientos de intervenciones complejas, asegurando un seguimiento riguroso y tomando las mejores decisiones para maximizar el impacto de sus recursos. El Enfoque: Una Alianza Tecnológica con Impacto Social Este proyecto nace de una potente alianza entre la Universidad de Málaga y la asociación Nuevo Hogar Betania, bajo la dirección general del profesor Antonio Fernández Leiva. El objetivo era aplicar la tecnología para potenciar el increíble trabajo del equipo de Betania. Como parte del equipo universitario, mi rol se centró en la dirección técnica del proyecto de gestión. Mis responsabilidades principales fueron: Traducir las complejas necesidades del equipo de Betania en una arquitectura técnica viable. Diseñar la plataforma \"IAMIS\" como un sistema de gestión integral que centralizara la información. Supervisar el desarrollo para asegurar que la herramienta final fuera robusta, escalable y, sobre todo, útil y fácil de usar para los trabajadores sociales en su día a día. El Impacto: Una Herramienta Pionera con Alma Social IAMIS se ha convertido en una herramienta transformadora con un impacto reconocido por los medios: ✅ Eficiencia y Optimización: Permite a Nuevo Hogar Betania gestionar sus intervenciones de forma más eficaz, asegurando que la ayuda llega mejor y más rápido. 🤝 Colaboración de Prestigio: Un caso de éxito de la sinergia entre la Universidad de Málaga y el tercer sector, demostrando el poder de la tecnología aplicada con un fin social. 📰 Reconocimiento Mediático: El proyecto ha sido destacado en medios como Cadena SER y Europa Press como una \"herramienta pionera\" a nivel nacional. 💡 Innovación con Propósito: Establece un nuevo estándar sobre cómo la IA puede ser una aliada para potenciar el trabajo de las organizaciones sociales."
+      }
+      ,
+    
+      {
+        "title": "Transformación Digital del Marbella Football Center",
+        "url": "/proyectos/marbella-football-center/",
+        "excerpt": "Consultoría estratégica y supervisión del desarrollo de una plataforma de gestión a medida para un líder mundial del deporte de élite.",
+        "creators": null,
+        "year": 2024,
+        "tech": "Consultoría, Transformación Digital, PWA, Gestión de Proyectos",
+        "content": "El Reto: Digitalizar a un Líder del Deporte de Élite Marbella Football Center, referente mundial que acoge a los mejores equipos, se enfrentaba a una gran complejidad operativa. La gestión de reservas, planificación y facturación se apoyaban en procesos manuales y herramientas dispersas, generando ineficiencias. Mi Aportación: Estrategia, Selección y Supervisión Mi rol abarcó todo el ciclo de vida de la solución: 1. Análisis Estratégico: Realicé un diagnóstico profundo de los flujos de trabajo de MFC para identificar los cuellos de botella y definir los requisitos de una solución tecnológica a medida. 2. Selección del Partner Tecnológico: Una de las decisiones más críticas fue elegir al equipo adecuado para el desarrollo. Tras un proceso de evaluación, seleccioné a la empresa Bimaxpro, garantizando no solo la calidad del desarrollo inicial, sino también un socio de confianza para el futuro de MFC. 3. Supervisión del Desarrollo: Dirigí y supervisé la creación de la aplicación web progresiva (PWA), actuando como puente entre las necesidades de negocio de MFC y el equipo técnico de Bimaxpro para asegurar que el producto final estuviera perfectamente alineado con los objetivos. \"La visión estratégica de David Bueno y su capacidad para entender nuestras necesidades han sido clave. Nos propuso una visión tecnológica clara y además nos conecto con el partner perfecto dando una solución que funciona hoy pero preparada para el futuro.\"Hugo Ferre, Director General de MFC. El Impacto: Eficiencia y un Ecosistema Sostenible La culminación de esta primera fase ha generado resultados transformadores para la organización: ✅ Optimización de la Gestión: Reducción drástica del tiempo dedicado a tareas administrativas y eliminación de errores manuales. ✅ Visión de Negocio Unificada: Una plataforma central que proporciona datos precisos y en tiempo real para una toma de decisiones informada. 🤝 Alianza Tecnológica a Largo Plazo: MFC cuenta ahora con Bimaxpro como socio de confianza para el mantenimiento y los futuros evolutivos de la plataforma, asegurando la sostenibilidad del proyecto"
+      }
+      ,
+    
+      {
+        "title": "Liderando la Transformación Digital de Málaga (2011-2021)",
+        "url": "/proyectos/liderazgo-cemi/",
+        "excerpt": "Caso de éxito de una década como CIO del Ayuntamiento de Málaga, convirtiendo el CEMI en el corazón digital de la ciudad y logrando reconocimientos nacionales e internacionales.",
+        "creators": null,
+        "year": "2011-2021",
+        "tech": "Liderazgo, Estrategia Digital, Gestión de Proyectos, Open Data, Administración Electrónica",
+        "content": "El Reto: Convertir un Centro Tecnológico en el Corazón Digital de una Ciudad En julio de 2011, asumí la gerencia del Centro Municipal de Informática (CEMI) del Ayuntamiento de Málaga. El desafío era monumental: transformar un centro de soporte técnico en un motor de innovación estratégica, modernizar infraestructuras críticas y liderar la transición hacia una verdadera Administración Electrónica y una Smart City de referencia. La Visión Estratégica: Liderazgo, Eficiencia y Orientación al Ciudadano Durante casi una década, mi gestión se centró en varios pilares clave: Reorganización y Eficiencia: Rediseñamos la estructura del CEMI, orientándola al usuario bajo el modelo ITIL. Implementamos el \"portafirmas\" digital, reduciendo la firma de documentos de días a minutos y firmando personalmente más de 12.200 documentos. Modernización de Infraestructuras: Lideré la consolidación del CPD Municipal y el despliegue de una red de fibra óptica propia, logrando una reducción de costes en telecomunicaciones de 2,5M€ a 900.000€ anuales. Impulso a la Administración Electrónica: Tomamos la decisión estratégica de desarrollar un tramitador propio, poniendo en marcha más de 320 procedimientos y gestionando más de 250.000 expedientes. Pioneros en Open Data: Creamos el portal de Datos Abiertos de Málaga, convirtiéndolo en el referente número 1 de España y fomentando su reutilización por gigantes como TomTom, Apple y Here. De aquí nació el premiado chatbot \"Victoria la Malagueña\". El Legado: Una Ciudad Reconocida y un Equipo de Alto Rendimiento El resultado de esta década de trabajo fue una transformación reconocida a nivel nacional e internacional: 🏆 Málaga nombrada Ciudad más Inteligente de España (Informe IDC, 2011). 🏆 Ganador del Premio CIONET a la Excelencia Digital en el Sector Público (2019). 🏆 Ganador del concurso \"The Chatbots Tourism Awards\" en FITUR por \"Victoria la Malagueña\" (2019). 🏆 Múltiples premios ASLAN, CNIS y NovaGob por proyectos de infraestructuras, gestión de datos y participación ciudadana. Descargar el Resumen Completo de la Etapa en el CEMI (PDF)"
+      }
+      ,
+    
+      {
+        "title": "Análisis Grafoscópico con IA",
+        "url": "/proyectos/analisis-grafoscopico/",
+        "excerpt": "Colaboración con la Policía Científica Nacional para el desarrollo de una herramienta de IA que agiliza la identificación de escritura manuscrita.",
+        "creators": "Miguel Ángel Vázquez, Araceli Ruiz Vallecillo, David Bueno Vallejo",
+        "year": 2025,
+        "tech": "R, Python, IA, Handwriter, Modelos Bayesianos",
+        "content": "El Reto: Agilizar la Identificación Forense de Escritura El análisis grafoscópico es una disciplina forense crucial, pero tradicionalmente es un proceso manual, exhaustivo y laborioso. Para los expertos de la Policía Científica Nacional, enfrentarse a casos con un gran número de posibles autores consume un tiempo y unos recursos considerables. El reto era claro: ¿cómo podíamos usar la tecnología para crear una herramienta que agilizara este proceso, aportando objetividad y eficiencia? La Solución: IA y un Modelo Estadístico a Medida En una colaboración directa con la Policía Científica Nacional y la Universidad de Málaga, desarrollamos una solución integral que automatiza y cuantifica el análisis de escritura: Base Tecnológica Robusta: Adaptamos y optimizamos la librería de código abierto handwriter, un paquete de R especializado, para las características específicas de la escritura en población española. Modelo Probabilístico: El sistema descompone la escritura en \"grafos\" y, mediante un modelo estadístico bayesiano, calcula la probabilidad de que un documento cuestionado pertenezca a un autor de un conjunto cerrado de sospechosos. Automatización del Flujo de Trabajo: Desarrollamos una serie de scripts auxiliares en Python y R para automatizar el preprocesamiento masivo de imágenes, como la división de documentos y la eliminación de cabeceras. El Impacto: Una Herramienta de Apoyo Crítica para los Expertos Este proyecto trasciende lo académico para convertirse en una herramienta con un impacto directo en el trabajo policial: ✅ Optimización de Recursos: Permite a los peritos calígrafos focalizar sus esfuerzos en los autores con la mayor probabilidad, acelerando drásticamente la resolución de casos. 🤝 Colaboración Institucional: Un caso de éxito de transferencia de conocimiento entre la Universidad y la Policía Nacional, validado por expertos del más alto nivel. 🔬 Rigor Científico: Proporciona una evaluación probabilística objetiva que complementa y respalda el análisis del experto humano. 📖 Creación de una Guía de Buenas Prácticas que asegura la reproducibilidad y sienta las bases para futuras líneas de investigación. &lt;/ul&gt;"
+      }
+      ,
+    
+      {
+        "title": "AI Courses Catalog",
+        "url": "/proyectos/ai-courses-catalog/",
+        "excerpt": "Un catálogo inteligente para navegar el laberinto de la formación en IA y Unreal Engine, desarrollado en colaboración con Google AI Studio.",
+        "creators": null,
+        "year": 2025,
+        "tech": "HTML, CSS, JavaScript, JSON, Google AI Studio",
+        "content": "El Reto: Navegar el Laberinto de la Formación en IA El auge de la Inteligencia Artificial ha provocado una explosión de cursos online. Sin embargo, esta oferta está fragmentada en múltiples plataformas (Youtube, Linkedin, Github, Coursera, Udemy, edX...), haciendo que para estudiantes y profesionales sea una tarea tediosa y abrumadora encontrar la formación adecuada. El reto era crear una solución centralizada y eficiente para acabar con esta sobrecarga de información. La Solución: Un Catálogo Inteligente y una Colaboración Humano-IA Desarrollé una aplicación web que no solo soluciona el problema, sino que también sirve como demostración de un flujo de trabajo de desarrollo moderno: Catálogo Centralizado: La aplicación agrega cursos de las principales plataformas en una única interfaz, alimentada por un fichero JSON fácilmente actualizable. Filtrado Dinámico: Implementé un sistema de búsqueda y filtrado instantáneo por tipo, categoría y nivel, permitiendo al usuario afinar su búsqueda en segundos. Desarrollo Acelerado por IA: Este proyecto fue construido en colaboración con Google AI Studio. Yo definí la estrategia, arquitectura y objetivos, mientras que la IA actuó como un \"socio de programación\", generando código, depurando y optimizando, lo que redujo drásticamente el tiempo de desarrollo. El Impacto: Una Herramienta Funcional y un Caso de Estudio de Productividad El resultado es un proyecto con un doble impacto: ✅ Una herramienta 100% funcional y pública que ya ayuda a la comunidad a encontrar la mejor formación en IA y, en su segunda versión, también para Unreal Engine. 🚀 Un caso de estudio real sobre la sinergia humano-IA, demostrando cómo construir aplicaciones completas de forma más rápida y eficiente. 📚 Un recurso de código abierto para que otros desarrolladores aprendan a manipular el DOM y trabajar con datos dinámicos en JavaScript."
+      }
+      
+    
+  ],
+  "conferencias": [
+    
+      {
+        "title": "Releevant 2022",
+        "subtitle": "¿Por qué estamos aquí?",
+        "description": "Conferencia a alumnos del Bootcamp de programación Web de Releevant. En la charla se plantean algunas dudas existenciales y en el desarrollo se explica cómo mejorar para resolverlas, por ejemplo sobre cómo aprendemos, cómo nos relacionamos o qué hacemos para gestionar bien el tiempo y llegar a nuestros objetivos.",
+        "date": "2022-04-28 10:00:00 +0200",
+        "url": "https://www.releevant.com/",
+        "video_url": null
+      }
+      ,
+    
+      {
+        "title": "Fantec 2022",
+        "subtitle": "No lo sabes pero eres un ciborg. Aprende a explotar tu lado... cibernético",
+        "description": "Una experiencia interesante junto a Victor Osuna (Agencia Digital de Andalucía) con más de 170 alumnos de institutos, donde planteamos varios retos que los alumnos fueron resolviendo y que servían para dar respuestas a un Kahoot que duró toda la sesión.",
+        "date": "2022-05-20 10:00:00 +0200",
+        "url": "https://www.linkedin.com/pulse/la-ada-presente-en-fantec-para-apoyar-el-talento-/?trackingId=3mURPNSgSrS8AvsR%2BApNjg%3D%3D",
+        "video_url": null
+      }
+      ,
+    
+      {
+        "title": "Congreso Nacional de Archivo y Documento Electrónico",
+        "subtitle": "Mesa redonda sobre Certificación y Firma Electrónica",
+        "description": "Invitado para participar en la mesa redonda sobre Certificación y Firma Electrónica, Plataformas Comunes y Experiencias en la Administración Local.",
+        "date": "2022-06-14 10:00:00 +0200",
+        "url": "https://cnade.es/speakers/david-bueno-vallejo/",
+        "video_url": "https://www.youtube.com/watch?v=SEiUclQeIgo"
+      }
+      ,
+    
+      {
+        "title": "Semana de la Administración Abierta",
+        "subtitle": "Aspectos éticos y tecnológicos del uso de la IA en servicios públicos",
+        "description": "Debate en el que profesionales y expertos del ámbito público y privado y de la Universidad debatimos sobre los aspectos éticos y tecnológicos que implica el uso de la Inteligencia Artificial en la prestación de servicios públicos, con especial atención al uso de avatares y asistentes conversacionales.",
+        "date": "2022-06-30 10:00:00 +0200",
+        "url": "https://transparencia.gob.es/transparencia/transparencia_Home/index/Gobierno-abierto/sensibilizacion-formacion/SemanaAA/EventosSAA2022.html",
+        "video_url": "https://www.youtube.com/watch?v=6hzKpI6v6Tw"
+      }
+      ,
+    
+      {
+        "title": "II Congreso Red Ciudades Inteligentes",
+        "subtitle": "Eficiencia energética y movilidad: Oportunidades de la IA para lograr bajas emisiones",
+        "description": "En este congreso organizado por la Red Española de Ciudades Inteligentes, participé en una mesa sobre movilidad y cómo la IA podría ayudar a mejorar las emisiones, acompañado de expertos en transporte como Jorge Ordás (DGT), Mateu Marcus (EMT Palma) y Álvaro Fernández (EMT Valladolid).",
+        "date": "2022-10-11 10:00:00 +0200",
+        "url": "https://reddeciudadesinteligentes.es/2022/08/03/ii-congreso-nacional-de-la-red-espanola-de-ciudades-inteligentes-reci/",
+        "video_url": ""
+      }
+      ,
+    
+      {
+        "title": "Mesa Redonda sobre Inteligencia Artificial",
+        "subtitle": "Así impactará la inteligencia artificial en la salud y el bienestar de las personas",
+        "description": "En esta Mesa Redonda se abordó en qué medida la Inteligencia Artificial (IA) está impactando en la vida de las personas, las oportunidades y los desafíos que presenta para el bienestar individual y colectivo, la atención sanitaria, la investigación y el desarrollo de nuevos tratamientos.",
+        "date": "2024-10-18 10:00:00 +0200",
+        "url": "https://ateneomalaga.org/actividades/inteligencia-artificial-salud-bienestar-personas/",
+        "video_url": ""
+      }
+      ,
+    
+      {
+        "title": "IA en Salud",
+        "subtitle": "I Jornadas de Inteligencia Artificial Conversacional en Salud",
+        "description": "La jornada trata sobre como la inteligencia artificial está transformando la salud con diagnósticos más rápidos y precisos, tratamientos personalizados, apoyo en salud mental y aceleración en la investigación. El objetivo de la jornada es la creación de un manifiesto y mi participación consiste en dinamizar las presentaciones de emprendedores.",
+        "date": "2024-11-13 10:00:00 +0100",
+        "url": "https://iaensalud.es",
+        "video_url": null
+      }
+      ,
+    
+      {
+        "title": "Cátedra Comercio y Transformación Digital",
+        "subtitle": "Futuro Virtual: La era de la realidad extendida",
+        "description": "En la actual conferencia sobre Realidad Extendida, se explora la revolución tecnológica que VR, AR y MR están aportando a nuestras vidas. Se discute cómo desde simples filtros en redes sociales hasta complejas recreaciones de gemelos digitales, la XR redefine la interacción diaria y profesional. Se examina el impacto de estas tecnologías en diversos sectores, los desafíos de los metaversos y las oportunidades que surgen con la evolución de la IA y la disminución de dispositivos, haciendo la XR más inmersiva y accesible. La presentación promete ser un viaje revelador hacia el futuro de la tecnología y su integración en la vida cotidiana.",
+        "date": "2024-11-28 00:00:00 +0100",
+        "url": "https://www.catedracomercio.uma.es/eventbrite-event/futuro-virtual-la-era-de-la-realidad-extendida/",
+        "video_url": "https://youtu.be/YPIVD6hKr5w?si=TLRsiPY7ZHPD1s63"
+      }
+      ,
+    
+      {
+        "title": "V Encuentro de la Comunidad de Desarrolladores de Unreal Engine de Málaga",
+        "subtitle": "Mesa Redonda: Futuro de la IA Generativa en la Empresa",
+        "description": "Este evento reunió el 30 de mayo a profesionales y entusiastas del desarrollo 3D en el Polo Digital de Málaga. El evento destacó las últimas novedades de Unreal Engine y su integración con IA, presentó a Polo Digital como nuevo Training Partner de Epic Games, y ofreció charlas sobre producción virtual, XR y experiencias inmersivas. Además, el formato Pechakucha permitió a miembros de la comunidad compartir proyectos innovadores en interiorismo, patrimonio cultural, moda digital y videojuegos. La jornada cerró con una copa de networking cortesía de Tangram Solutions..",
+        "date": "2025-05-30 10:00:00 +0200",
+        "url": "https://communities.unrealengine.com/events/details/epic-games-malaga-presents-v-encuentro-de-la-comunidad-de-desarrolladores-de-unreal-engine-de-malaga-unrealmalaga25/",
+        "video_url": "https://www.youtube.com/watch?v=lHzPMCbxaoE&list=PLnNbmcjjevxt7NV_7RKWlT0M9bMHPRQhW&index=10"
+      }
+      ,
+    
+      {
+        "title": "Hackday en Inteligencia Artificial Generativa",
+        "subtitle": "Mesa Redonda: Futuro de la IA Generativa en la Empresa",
+        "description": "Jornada de IA Generativa ESIC: Evento sobre IA Generativa orientado al aprendizaje y networking.",
+        "date": "2025-06-12 10:00:00 +0200",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7338279055835725825/",
+        "video_url": ""
+      }
+      
+    
+  ]
+}
