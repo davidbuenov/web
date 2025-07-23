@@ -323,11 +323,21 @@ function initializeVictoriaChatbot() {
 	let chatHistory = [];
 
 	// Función para generar un ID de sesión único
+
+	// 1. FUNCIÓN PARA OBTENER O CREAR EL SESSION ID
 	function getSessionId() {
-		if (!currentSessionId) {
-			currentSessionId = `web_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+		// Intentamos obtener el ID del sessionStorage
+		let sessionId = sessionStorage.getItem('victoriaChatSessionId');
+
+		// Si no existe, lo creamos y lo guardamos
+		if (!sessionId) {
+			// Un ID único combinando la fecha actual y un número aleatorio
+			sessionId = 'session_' + Date.now() + '-' + Math.random().toString(36).substring(2, 9);
+			sessionStorage.setItem('victoriaChatSessionId', sessionId);
+			console.log('Nueva sesión de chat iniciada:', sessionId);
 		}
-		return currentSessionId;
+
+		return sessionId;
 	}
 
 	// Función para añadir un mensaje a la ventana de chat
@@ -361,7 +371,8 @@ function initializeVictoriaChatbot() {
 		const requestBody = {
 
 			message: prompt,
-			history: chatHistory
+			history: chatHistory,
+			sessionId: getSessionId() // Obtenemos o creamos el session ID
 
 		};
 
